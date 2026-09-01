@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Totems, Mugs, and the Spirits That Hold Your Drink · The Swizzle Journal</title>
+<meta name="description" content="From temple guardians to the ceramic tiki mug: how carved faces travelled from sacred posts to the bar top.">
+<link rel="icon" type="image/png" href="../../assets/Logos/favicon-swizzle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../blog.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="../../" aria-label="Swizzle home">
+      <img class="brand-wide" src="../../assets/Logos/swizzle-logo-header.png" alt="Swizzle · Tropical Cocktails &amp; Food">
+    </a>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="../../">Home</a>
+      <a href="../../#cocktails">Cocktails</a>
+      <a href="../../#menu">Menu</a>
+      <a href="../../#story">Story</a>
+      <a href="../" class="active">Journal</a>
+      <a href="../../#visit">Reservations</a>
+    </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+  </div>
+</header>
+<div class="art-hero" style="background-image:url('../../assets/photos/blog-totems-mugs.jpg')"></div>
+<article class="post">
+  <div class="crumb"><a href="../">&larr; The Journal</a></div>
+  <div class="meta">Craft · Objects &nbsp;·&nbsp; 6 min read · July 2026</div>
+  <h1>Totems, Mugs, and the Spirits That Hold Your Drink</h1>
+  <p class="standfirst">Between the six-foot guardian by our door and the little carved mug in your hand runs one unbroken line of craft. Here is how the faces got from the temple to the bar top.</p>
+  <div class="body">
+<p>Across Polynesia, people carved presence into wood. Marquesan tiki stood guard over sacred sites; Māori pou told whole genealogies in a single post; Hawaiian kiʻi watched from the walls of temple platforms. A carved post was never furniture. It marked a boundary — here the ordinary world ends — and it held a face so that power had somewhere to live.</p>
+<p>When Don the Beachcomber and Trader Vic built their mid-century paradises, they understood instinctively that the room needed guardians. They filled their bars with carvings — some genuine Oceanic pieces, many carved to order in California — and the American "tiki style" was born. Whatever else one says about that borrowing, the carvers themselves took the work seriously, and the best of those mid-century totems are now museum pieces.</p>
+<h2>The mug is a small totem</h2>
+<p>The tiki mug came later than people think. Early tropical drinks arrived in whatever held liquid — tall glasses, coconut shells, hollowed pineapples. Somewhere in the 1950s the carved face jumped onto the vessel itself, and ceramics factories — many of them Japanese, stamping <b>Otagiri</b> or <b>Orchids of Hawaii</b> on the base — began shipping millions of grimacing cups to restaurants across America. A souvenir was born: the drink you could take home, minus the drink.</p>
+<blockquote>A tiki mug is a totem you can hold — a guardian scaled down to fit one evening and one pair of hands.</blockquote>
+<p>Collectors chase those old mugs now the way others chase vinyl pressings, and a new generation of ceramic artists sculpts limited runs that sell out in minutes. The form keeps evolving because the idea underneath it is sturdy: a drink tastes different when it arrives inside a character. Weight matters. The face matters. You hold a tiki mug with two hands without being told to.</p>
+<h2>Our own keepers</h2>
+<p>The totems in this room crossed the sea from <b>Bali</b>, carved by hand in a tradition that is cousin, not copy, to the Polynesian one — and that is the point of this whole house: islands talking to rivers, craft talking to craft. The mugs behind our bar were chosen the same way, one character at a time. The Lao Tiki Punch pours into a carved face; the Mekong Naga coils inside a serpent; the Plain of Jars arrives in its own small clay jar, which is Laos telling the same old story in its own accent.</p>
+<p>Empty, they are ornaments. Full, they are exactly what the old carvers understood: a face, a vessel, and something worth guarding inside.</p>
+</div>
+</article>
+<div class="post-foot"><a class="btn" href="../">&larr; Back to the Journal</a><a class="btn" href="../../#visit">Book a Table</a></div>
+<div class="trim" aria-hidden="true"></div>
+<footer>
+  <div class="foot-base">© 2026 Noy's Fruit Heaven · Swizzle · Vientiane, Lao PDR · <a href="../">The Journal</a></div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'), l=document.getElementById('links');
+  if(!b||!l) return;
+  b.addEventListener('click',function(){
+    var open=l.classList.toggle('open');
+    b.classList.toggle('open',open);
+    b.setAttribute('aria-expanded',open);
+    document.body.style.overflow=open?'hidden':'';
+  });
+  l.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      l.classList.remove('open'); b.classList.remove('open');
+      b.setAttribute('aria-expanded','false'); document.body.style.overflow='';
+    });
+  });
+})();
+</script>
+</body>
+</html>

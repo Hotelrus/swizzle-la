@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>From Navy Grog to the Zombie · The Swizzle Journal</title>
+<meta name="description" content="A short history of tiki cocktails: grog, planter's punch, the golden age, the dark years, and the revival that reached Vientiane.">
+<link rel="icon" type="image/png" href="../../assets/Logos/favicon-swizzle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../blog.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="../../" aria-label="Swizzle home">
+      <img class="brand-wide" src="../../assets/Logos/swizzle-logo-header.png" alt="Swizzle · Tropical Cocktails &amp; Food">
+    </a>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="../../">Home</a>
+      <a href="../../#cocktails">Cocktails</a>
+      <a href="../../#menu">Menu</a>
+      <a href="../../#story">Story</a>
+      <a href="../" class="active">Journal</a>
+      <a href="../../#visit">Reservations</a>
+    </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+  </div>
+</header>
+<div class="art-hero" style="background-image:url('../../assets/photos/blog-navy-grog.jpg')"></div>
+<article class="post">
+  <div class="crumb"><a href="../">&larr; The Journal</a></div>
+  <div class="meta">Cocktails · Canon &nbsp;·&nbsp; 8 min read · July 2026</div>
+  <h1>From Navy Grog to the Zombie</h1>
+  <p class="standfirst">The drinks in our Book are almost a century old, and some of their grandparents are older than that. A short history of the tiki cocktail, from ship rations to the glass in front of you.</p>
+  <div class="body">
+<p>Every tiki drink is descended from punch, and punch is descended from necessity. Sailors in the age of sail were owed rum; in 1740 the British Admiral Edward Vernon — nicknamed <b>Old Grog</b> for his grogram cloak — ordered the ration watered and cut with lime and sugar, accidentally inventing both grog and a scurvy remedy. On the plantations of Jamaica the same arithmetic became <b>planter's punch</b>, remembered in rhyme: one of sour, two of sweet, three of strong, four of weak. Rum, lime, sugar, dilution. Everything since is variation.</p>
+<p>The variation that mattered came in 1933, when Donn Beach began layering multiple rums in one glass and hiding his spice mixes behind coded labels. His Rhum Rhapsodies — the <b>Zombie</b>, the <b>Navy Grog</b>, the <b>Pearl Diver</b> — were punch rebuilt as theatre and engineering at once. Across the bay in Oakland, Victor Bergeron turned his saloon into <b>Trader Vic's</b> and answered with a drink built on aged Jamaican rum, orange liqueur, orgeat and lime. He named it after the Tahitian word for "the best" — <b>Mai Tai</b> — and spent the rest of his life defending the 1944 recipe against all claimants, Donn included. We serve the 1944. The argument you can have at the bar.</p>
+<h2>Golden age, dark age</h2>
+<p>Through the 1950s and 60s, tiki was simply what American nightlife looked like: Kon-Tiki rooms in Hilton hotels, flaming bowls for four, A-frame restaurants with waterfalls. Then it collapsed under its own volume. By the 1980s the multi-rum architecture had been replaced by sour mix and a paper umbrella, and "tiki" meant a sweet drink you regretted. The recipes weren't just unfashionable — thanks to Donn's secrecy, many were literally lost.</p>
+<blockquote>The tiki revival was not nostalgia. It was archaeology — done one decoded notebook at a time.</blockquote>
+<p>The rescue came from historians as much as bartenders. Jeff "Beachbum" Berry spent years tracking down retired Beachcomber bartenders and their notebooks, publishing decoded recipes that turned out to be serious, balanced, technically demanding drinks. Craft bars took note; fresh juice and real orgeat returned; and by the 2010s a properly built Zombie was once again something a bartender could be proud of.</p>
+<h2>The story reaches the Mekong</h2>
+<p>Which brings the history to a fruit stand near Pha That Luang. Our Book keeps the canon honestly — the 1944 Mai Tai, the decoded Vault, the limit-two Zombie — and then does what tiki has always done: it uses what grows here. Toasted sticky rice orgeat instead of almond. Lemongrass in the falernum. Lao rums from Vientiane's own distillery. Tamarind, mak khaen, Bolaven coffee. Donn built paradise from what the boats brought him; we build ours from what the morning market carries. Same tradition. New island.</p>
+</div>
+</article>
+<div class="post-foot"><a class="btn" href="../">&larr; Back to the Journal</a><a class="btn" href="../../#visit">Book a Table</a></div>
+<div class="trim" aria-hidden="true"></div>
+<footer>
+  <div class="foot-base">© 2026 Noy's Fruit Heaven · Swizzle · Vientiane, Lao PDR · <a href="../">The Journal</a></div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'), l=document.getElementById('links');
+  if(!b||!l) return;
+  b.addEventListener('click',function(){
+    var open=l.classList.toggle('open');
+    b.classList.toggle('open',open);
+    b.setAttribute('aria-expanded',open);
+    document.body.style.overflow=open?'hidden':'';
+  });
+  l.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      l.classList.remove('open'); b.classList.remove('open');
+      b.setAttribute('aria-expanded','false'); document.body.style.overflow='';
+    });
+  });
+})();
+</script>
+</body>
+</html>

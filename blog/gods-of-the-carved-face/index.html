@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Four Gods and a Carving Knife · The Swizzle Journal</title>
+<meta name="description" content="Kū, Kāne, Lono and Kanaloa — the Hawaiian gods behind the carved faces, and what the word tiki actually means.">
+<link rel="icon" type="image/png" href="../../assets/Logos/favicon-swizzle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../blog.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="../../" aria-label="Swizzle home">
+      <img class="brand-wide" src="../../assets/Logos/swizzle-logo-header.png" alt="Swizzle · Tropical Cocktails &amp; Food">
+    </a>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="../../">Home</a>
+      <a href="../../#cocktails">Cocktails</a>
+      <a href="../../#menu">Menu</a>
+      <a href="../../#story">Story</a>
+      <a href="../" class="active">Journal</a>
+      <a href="../../#visit">Reservations</a>
+    </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+  </div>
+</header>
+<div class="art-hero" style="background-image:url('../../assets/photos/blog-four-gods.jpg')"></div>
+<article class="post">
+  <div class="crumb"><a href="../">&larr; The Journal</a></div>
+  <div class="meta">Culture · Polynesia &nbsp;·&nbsp; 7 min read · August 2026</div>
+  <h1>Four Gods and a Carving Knife</h1>
+  <p class="standfirst">The faces on our walls have older names than 'tiki bar.' A short, respectful tour of the gods and ancestors behind the carvings — and what the word tiki actually means.</p>
+  <div class="body">
+<p>Start with the word. In Māori tradition, <b>Tiki</b> is the first man — in some tellings shaped from red clay by the god Tāne. In the Marquesas, <b>tiki</b> are carved figures of deified ancestors, guardians rendered in wood and stone with wide eyes and heavy hands. Hawaiians used a different word for their carved images: <b>kiʻi</b>. What Americans came to call "tikis" in the twentieth century is really a whole family of Polynesian carving traditions, folded — not always carefully — into one borrowed name.</p>
+<p>Behind the carvings stood real theology. Hawaiʻi honoured four great akua, four faces of the world's workings, and knowing them changes how you look at every carved face in this room.</p>
+<h2>The four great akua</h2>
+<p><b>Kū</b> is effort and struggle — war, politics, fishing, medicine, the rising sun. His carvings snarl: wide mouth, defiant chin. Temples of Kū demanded the most serious offerings, and his season was the season of work and conflict.</p>
+<p><b>Kāne</b> is the creator — sunlight, fresh water, life itself. Where Kū takes, Kāne gives. Springs and rain clouds belonged to him, and no blood was offered at his shrines; he was honoured with water and prayer.</p>
+<p><b>Lono</b> is peace and plenty — harvest, rain, music, games. For four months a year, during the <b>Makahiki</b> festival, war was simply forbidden: taxes were paid in food, sport replaced fighting, and Lono's image travelled the islands. When Captain Cook sailed into Kealakekua Bay in the middle of Makahiki season in 1779, the timing shaped everything that followed — a collision of calendars that historians still argue about.</p>
+<p><b>Kanaloa</b> is the deep ocean — the long voyage, the squid, the tide. Companion and counterpart to Kāne, he watched over the sea roads that connected the largest nation of navigators the world has ever known.</p>
+<blockquote>A carving was never the god. It was a vessel the god might visit — a doorway, kept open by respect.</blockquote>
+<h2>What a bar owes the gods</h2>
+<p>Mid-century America borrowed these faces for restaurants and bowling alleys, and much was lost in the borrowing. The modern tiki revival tries to do better: to treat the carvings as craft with a lineage, not props. Our own totems were carved by hand in Bali — a different island tradition, invited here deliberately, the way Lao silk and Jamaican rum share our menu. We keep the faces because they mean something: effort, generosity, peace, the deep water. A bar could organise itself around worse ideas.</p>
+<p>So when the totems by the door catch your eye tonight, give them a nod. They have been watching over gatherings like this one, in one form or another, for a very long time.</p>
+</div>
+</article>
+<div class="post-foot"><a class="btn" href="../">&larr; Back to the Journal</a><a class="btn" href="../../#visit">Book a Table</a></div>
+<div class="trim" aria-hidden="true"></div>
+<footer>
+  <div class="foot-base">© 2026 Noy's Fruit Heaven · Swizzle · Vientiane, Lao PDR · <a href="../">The Journal</a></div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'), l=document.getElementById('links');
+  if(!b||!l) return;
+  b.addEventListener('click',function(){
+    var open=l.classList.toggle('open');
+    b.classList.toggle('open',open);
+    b.setAttribute('aria-expanded',open);
+    document.body.style.overflow=open?'hidden':'';
+  });
+  l.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      l.classList.remove('open'); b.classList.remove('open');
+      b.setAttribute('aria-expanded','false'); document.body.style.overflow='';
+    });
+  });
+})();
+</script>
+</body>
+</html>

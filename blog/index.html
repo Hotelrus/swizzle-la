@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Swizzle Journal · Tales from a Lao Tiki Bar</title>
+<meta name="description" content="The Swizzle Journal — stories from a Lao tiki bar in Vientiane: cocktail history, Polynesian culture, and the people and objects behind the bar.">
+<link rel="icon" type="image/png" href="../assets/Logos/favicon-swizzle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blog.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="../" aria-label="Swizzle home">
+      <img class="brand-wide" src="../assets/Logos/swizzle-logo-header.png" alt="Swizzle · Tropical Cocktails &amp; Food">
+    </a>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="../">Home</a>
+      <a href="../#cocktails">Cocktails</a>
+      <a href="../#menu">Menu</a>
+      <a href="../#story">Story</a>
+      <a href="index.html" class="active">Journal</a>
+      <a href="../#visit">Reservations</a>
+    </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+  </div>
+</header>
+<header class="page-head wrap">
+  <div class="crumb">The Journal</div>
+  <h1>Tales from the swizzle stick</h1>
+  <p class="standfirst">Notes from a Lao tiki bar — cocktail history, island gods, carved faces and the people who keep the torches lit. Written slowly, between services.</p>
+</header>
+<main class="wrap post-list">
+  <a class="post-card featured" href="the-swizzle-story/">
+    <div class="art-wrap"><div class="art" style="background-image:url('../assets/photos/blog-swizzle-story.jpg')"></div></div>
+    <div class="body">
+      <div class="cat">Cocktails · History</div>
+      <h2>The Drink That Named the Bar</h2>
+      <p>Before it was our name, the swizzle was a sound: a wooden stick spinning between two palms, ice hissing against tin, and the coldest drink in the tropics being born.</p>
+      <div class="read"><span>6 min read · September 2026</span><span class="arrow">&rarr;</span></div>
+    </div>
+  </a>
+  <a class="post-card" href="don-the-beachcomber/">
+    <div class="art-wrap"><div class="art" style="background-image:url('../assets/photos/blog-donn-beach.jpg')"></div></div>
+    <div class="body">
+      <div class="cat">History · Legends</div>
+      <h2>The Man Who Invented an Island</h2>
+      <p>Tiki bars have a single founding father, and he built the first one out of driftwood, theatre props and rum nobody wanted. This is the story of Donn Beach — and why one page of our menu belongs to him.</p>
+      <div class="read"><span>8 min read · August 2026</span><span class="arrow">&rarr;</span></div>
+    </div>
+  </a>
+  <a class="post-card" href="gods-of-the-carved-face/">
+    <div class="art-wrap"><div class="art" style="background-image:url('../assets/photos/blog-four-gods.jpg')"></div></div>
+    <div class="body">
+      <div class="cat">Culture · Polynesia</div>
+      <h2>Four Gods and a Carving Knife</h2>
+      <p>The faces on our walls have older names than 'tiki bar.' A short, respectful tour of the gods and ancestors behind the carvings — and what the word tiki actually means.</p>
+      <div class="read"><span>7 min read · August 2026</span><span class="arrow">&rarr;</span></div>
+    </div>
+  </a>
+  <a class="post-card" href="totems-and-mugs/">
+    <div class="art-wrap"><div class="art" style="background-image:url('../assets/photos/blog-totems-mugs.jpg')"></div></div>
+    <div class="body">
+      <div class="cat">Craft · Objects</div>
+      <h2>Totems, Mugs, and the Spirits That Hold Your Drink</h2>
+      <p>Between the six-foot guardian by our door and the little carved mug in your hand runs one unbroken line of craft. Here is how the faces got from the temple to the bar top.</p>
+      <div class="read"><span>6 min read · July 2026</span><span class="arrow">&rarr;</span></div>
+    </div>
+  </a>
+  <a class="post-card" href="short-history-of-tiki-cocktails/">
+    <div class="art-wrap"><div class="art" style="background-image:url('../assets/photos/blog-navy-grog.jpg')"></div></div>
+    <div class="body">
+      <div class="cat">Cocktails · Canon</div>
+      <h2>From Navy Grog to the Zombie</h2>
+      <p>The drinks in our Book are almost a century old, and some of their grandparents are older than that. A short history of the tiki cocktail, from ship rations to the glass in front of you.</p>
+      <div class="read"><span>8 min read · July 2026</span><span class="arrow">&rarr;</span></div>
+    </div>
+  </a>
+</main>
+<div class="trim" aria-hidden="true"></div>
+<footer>
+  <div class="foot-base">© 2026 Noy's Fruit Heaven · Swizzle · Vientiane, Lao PDR · <a href="./">The Journal</a></div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'), l=document.getElementById('links');
+  if(!b||!l) return;
+  b.addEventListener('click',function(){
+    var open=l.classList.toggle('open');
+    b.classList.toggle('open',open);
+    b.setAttribute('aria-expanded',open);
+    document.body.style.overflow=open?'hidden':'';
+  });
+  l.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      l.classList.remove('open'); b.classList.remove('open');
+      b.setAttribute('aria-expanded','false'); document.body.style.overflow='';
+    });
+  });
+})();
+</script>
+</body>
+</html>

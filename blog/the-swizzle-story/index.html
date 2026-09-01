@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Drink That Named the Bar · The Swizzle Journal</title>
+<meta name="description" content="Why our bar is called Swizzle: the story of the Caribbean swizzle stick, the bois lélé tree, and the coldest drinks in the tropics.">
+<link rel="icon" type="image/png" href="../../assets/Logos/favicon-swizzle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../blog.css">
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="../../" aria-label="Swizzle home">
+      <img class="brand-wide" src="../../assets/Logos/swizzle-logo-header.png" alt="Swizzle · Tropical Cocktails &amp; Food">
+    </a>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="../../">Home</a>
+      <a href="../../#cocktails">Cocktails</a>
+      <a href="../../#menu">Menu</a>
+      <a href="../../#story">Story</a>
+      <a href="../" class="active">Journal</a>
+      <a href="../../#visit">Reservations</a>
+    </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+  </div>
+</header>
+<div class="art-hero" style="background-image:url('../../assets/photos/blog-swizzle-story.jpg')"></div>
+<article class="post">
+  <div class="crumb"><a href="../">&larr; The Journal</a></div>
+  <div class="meta">Cocktails · History &nbsp;·&nbsp; 6 min read · September 2026</div>
+  <h1>The Drink That Named the Bar</h1>
+  <p class="standfirst">Before it was our name, the swizzle was a sound: a wooden stick spinning between two palms, ice hissing against tin, and the coldest drink in the tropics being born.</p>
+  <div class="body">
+<p>Walk into any serious tiki bar and listen. Under the music and the talk there is a small, dry rattle — a bartender rolling a stick between flat palms as if trying to start a fire inside a glass. That is swizzling, and it is one of the oldest techniques in tropical drinking. No shaker, no spoon dragged in circles. Just a stick, spun fast, until the outside of the glass wears a coat of frost.</p>
+<p>The stick itself grows on a tree. On Martinique they call it the <b>bois lélé</b> — a branch of the swizzle stick tree that ends, naturally, in a small star of five or six prongs. Cut it below the fork, strip the bark, and the tree has already done the lathe work. Caribbean households have used it for centuries to froth cocoa and mix punch; some time in the 1800s it found its way into rum, lime and sugar, and never left.</p>
+<h2>The Queen's Park years</h2>
+<p>The drink that carried the technique around the world was mixed at the Queen's Park Hotel in Port of Spain, Trinidad, in the 1920s — a tall glass packed with crushed ice, dark rum, lime, cane sugar and a forest of mint, crowned with a thick float of Angostura bitters made a few streets away. The <b>Queen's Park Swizzle</b> is still on our menu, made the long way. Trader Vic himself called it "the most delightful form of anesthesia given out today," and he was not often generous about other people's drinks.</p>
+<blockquote>A swizzle is not stirred and it is not shaken. It is spun — and the spinning is the point.</blockquote>
+<p>Why does the spinning matter? Physics, mostly. A swizzle stick whipped between the palms moves crushed ice past the liquid far faster than any spoon, chilling and diluting in seconds while beating tiny air bubbles into the drink. The result sits somewhere between a cocktail and a snow cone: colder than a shaken drink, lighter than a stirred one, alive on the tongue. When the frost climbs the outside of the glass, the drink is ready. Not before.</p>
+<h2>Why we took the name</h2>
+<p>When we were naming this bar, we kept coming back to the stick. It is humble — a branch, cut from a tree that grows where the drinks grow. It is precise — the difference between a good swizzle and a warm mess is technique and nothing else. And it is generous: the whole point of the spin is to give the drink to you at its exact best moment. Humble, precise, generous is a fine set of ambitions for a bar in Vientiane.</p>
+<p>So the crossed sticks went behind the mask on our logo, the <b>151 Swizzle</b> and the Queen's Park went into the Book, and the sound went into the room. When you hear that dry rattle from behind our bar, you now know what it is: a very old Caribbean trick, spinning away in Laos, about to land in front of you with frost on the glass.</p>
+</div>
+</article>
+<div class="post-foot"><a class="btn" href="../">&larr; Back to the Journal</a><a class="btn" href="../../#visit">Book a Table</a></div>
+<div class="trim" aria-hidden="true"></div>
+<footer>
+  <div class="foot-base">© 2026 Noy's Fruit Heaven · Swizzle · Vientiane, Lao PDR · <a href="../">The Journal</a></div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'), l=document.getElementById('links');
+  if(!b||!l) return;
+  b.addEventListener('click',function(){
+    var open=l.classList.toggle('open');
+    b.classList.toggle('open',open);
+    b.setAttribute('aria-expanded',open);
+    document.body.style.overflow=open?'hidden':'';
+  });
+  l.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){
+      l.classList.remove('open'); b.classList.remove('open');
+      b.setAttribute('aria-expanded','false'); document.body.style.overflow='';
+    });
+  });
+})();
+</script>
+</body>
+</html>
