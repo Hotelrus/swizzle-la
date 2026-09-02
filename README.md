@@ -4,4 +4,4 @@ Website for Swizzle, a Lao tiki bar at Noy's Fruit Heaven near Pha That Luang, V
 
 Live at https://swizzle.la
 
-Static site — no build step. `index.html` is the homepage, `blog/` holds the Journal.
+Built from the parent folder with `python3 build.py` — do not edit this directory by hand.
