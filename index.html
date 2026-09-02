@@ -353,8 +353,10 @@ nav.links a:hover::after{left:0;right:0}
   border-top:1px solid rgba(233,211,160,.4);border-bottom:1px solid rgba(233,211,160,.4);
   position:relative;
 }
+/* pattern pinned to the viewport; the band is a window you scroll past */
+.cta{clip-path:inset(0)}
 .cta::before{
-  content:"";position:absolute;inset:0;pointer-events:none;
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
   background:url('assets/photos/tiki-doodles.png') repeat;background-size:460px;
   opacity:.07;
 }
@@ -733,7 +735,7 @@ footer .wrap{position:relative;z-index:2}
       <a href="#top">Home</a>
       <a href="#cocktails">Cocktails</a>
       <a href="#menu">Menu</a>
-      <a href="#story">Story</a>
+      <a href="story/">Story</a>
       <a href="#keepers">Keepers</a>
       <a href="blog/">Journal</a>
       <a href="#visit">Reservations</a>
@@ -822,7 +824,7 @@ footer .wrap{position:relative;z-index:2}
         <p class="price">195,000 LAK</p>
       </article>
     </div>
-    <div class="sig-actions rv"><a href="#visit" class="btn">View Full Menu</a></div>
+    <div class="sig-actions rv"><a href="#menu" class="btn">View Full Menu</a></div>
   </div>
 </section>
 
@@ -949,7 +951,7 @@ footer .wrap{position:relative;z-index:2}
           <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Fried Banana, Bolaven Coffee</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">Caramelised banana fritters, Bolaven coffee syrup.</p></div></div>
         </div>
       </div>
-      <p class="menu-note">Our kitchen handles peanuts, fish and gluten daily &mdash; tell us about any allergy and we will cook around it.</p>
+      <p class="menu-note">Our kitchen handles peanuts, fish and gluten daily. Tell us about any allergy and we will cook around it.</p>
     </div>
 
     <!-- Chapter III: drinks -->
@@ -997,7 +999,7 @@ footer .wrap{position:relative;z-index:2}
     <h2 class="rv d1">A meeting of islands &amp; rivers</h2>
     <p class="rv d2">Swizzle is where the spirit of the Pacific meets the soul of Laos. By day this house is Noy's Fruit Heaven, pouring Vientiane's freshest shakes. At five, the totems wake: 65 cocktails built on aged rum, lao-lao and morning-market fruit, served under carvings that crossed the sea from Bali.</p>
     <p class="gong-line rv d2">And when the bronze gong sounds, the whole room knows: a bowl is coming.</p>
-    <a href="#visit" class="btn rv d3">Discover Our Story</a>
+    <a href="story/" class="btn rv d3">Discover Our Story</a>
     <img class="story-temple" src="assets/photos/story-scenery.png" alt="" aria-hidden="true">
   </div>
 </section>
@@ -1037,14 +1039,14 @@ footer .wrap{position:relative;z-index:2}
             <p class="role">Queen of the Fruit · Keeper of the Day</p>
           </div>
         </div>
-        <p>Noy has spent <b>twenty years</b> among mangoes, coconuts and morning markets, and she runs <b>Noy's Fruit Heaven</b> the way a captain runs a ship: nothing less than perfectly ripe gets aboard. Every syrup, puree and fruit in your glass tonight passed her hands first.</p>
+        <p>Noy has spent twenty years among mangoes, coconuts and morning markets, and she runs Noy's Fruit Heaven the way a captain runs a ship: nothing less than perfectly ripe gets aboard. Every syrup, puree and fruit in your glass tonight passed her hands first.</p>
         <div class="stamps" aria-label="Noy's world">
           <span class="pstamp">Vientiane</span>
           <span class="pstamp">20 Years of Fruit</span>
           <span class="pstamp">Market at Dawn</span>
           <span class="pstamp">Fruit Heaven</span>
         </div>
-        <p class="tally">Counted so far: twenty years, ten thousand mangoes, zero bad ones served.</p>
+        <p class="tally">Counted so far: twenty years, ten thousand mangoes, zero bad ones served. Well, maybe a few. Not on purpose.</p>
       </article>
       <article class="keeper rv d2">
         <div class="keeper-head">
@@ -1054,17 +1056,17 @@ footer .wrap{position:relative;z-index:2}
             <p class="role">The Navigator · Keeper of the Night</p>
           </div>
         </div>
-        <p><b>Twenty-three years</b> in hospitality, collected the long way around. He started in Russia, went to sea on cruise ships around <b>South America</b>, then worked the bars and floors of <b>Singapore, Dubai and Thailand</b> before the Mekong finally got him. Now he runs F&amp;B for hotels by day and lights the torches here by night.</p>
+        <p>Twenty-three years in hospitality, collected the long way around. He started at seventeen in Russia, went to sea on a ship that ran from the Bahamas to Antarctica, and worked the bars and floors of Moscow, Singapore, Dubai and Thailand before the Mekong finally got him. He ran food and beverage for hotels for years. Now he lights the torches here.</p>
         <div class="stamps" aria-label="Ruslan's route">
           <span class="pstamp">Russia</span>
           <span class="pstamp">Cruise Ships</span>
-          <span class="pstamp">South America</span>
+          <span class="pstamp">Antarctica</span>
           <span class="pstamp">Singapore</span>
           <span class="pstamp">Dubai</span>
           <span class="pstamp">Thailand</span>
           <span class="pstamp">Laos</span>
         </div>
-        <p class="tally">Counted so far: 23 years, four continents, seven ports, one gong.</p>
+        <p class="tally">Counted so far: twenty-three years, four continents, seven ports, one gong.</p>
       </article>
     </div>
   </div>
@@ -1151,7 +1153,7 @@ footer .wrap{position:relative;z-index:2}
     </div>
   </div>
     <div class="foot-base">© 2026 Noy's Fruit Heaven · Swizzle · Vientiane, Lao PDR</div>
-    <p class="foot-credit">— crafted in Vientiane by <a href="https://dev.kindee.app" target="_blank" rel="noopener">KinDee&nbsp;Dev</a> —</p>
+    <p class="foot-credit">crafted in Vientiane by <a href="https://dev.kindee.app" target="_blank" rel="noopener">KinDee&nbsp;Dev</a></p>
 </footer>
 
 <script>
