@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
-   AFTER DARK · jungle green, gold ornament, terracotta
+   SWIZZLE · jungle green, gold ornament, terracotta
    Photographic tiki lux, in the spirit of the approved mock.
    ============================================================ */
 @font-face{
@@ -104,6 +104,17 @@ h2.sect{
   animation:trimflow 22s linear infinite;
 }
 @keyframes trimflow{to{background-position:-70.5px center}}
+
+/* tapa register · the Menu -> Our Story seam only.
+   Redrawn from the 1943 Don the Beachcomber menu border (public domain).
+   Same 46px rhythm and gold hairlines as .trim; every other seam keeps the paddles. */
+.trim.trim-tapa{
+  background-image:url('assets/tapa-band.svg');
+  background-size:auto 32px;
+  animation:tapaflow 34s linear infinite;
+}
+@keyframes tapaflow{to{background-position:-192px center}}
+@media(prefers-reduced-motion:reduce){.trim.trim-tapa{animation:none}}
 
 /* buttons */
 .btn{
@@ -990,6 +1001,8 @@ footer .wrap{position:relative;z-index:2}
     </div>
   </div>
 </section>
+
+<div class="trim trim-tapa" aria-hidden="true"></div>
 
 <!-- ================= STORY ================= -->
 <section class="story" id="story">

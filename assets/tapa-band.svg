@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 80" width="480" height="80">
+  <!-- Swizzle tapa band. Six-block register, tiles seamlessly on both axes.
+       Motif vocabulary drawn after Tongan ngatu / Samoan siapo conventions:
+       pinwheel sun, X-grid, diagonal lozenge chain, dot rosette, comb rail, chevron.
+       Palette: gold #C9A45C / terra #B4543A. Control visibility with CSS opacity. -->
+
+  <g fill="none" stroke="none">
+
+    <!-- register rules, top and bottom -->
+    <rect x="0" y="2.2" width="480" height="1.6" fill="#C9A45C" fill-opacity=".55"/>
+    <rect x="0" y="76.2" width="480" height="1.6" fill="#C9A45C" fill-opacity=".55"/>
+
+    <!-- block dividers. Drawn at each block's left edge only, so the tile seam
+         inherits the next tile's divider and never doubles up. -->
+    <g fill="#C9A45C" fill-opacity=".38">
+      <rect x="0"   y="3.8" width="1.3" height="72.4"/>
+      <rect x="80"  y="3.8" width="1.3" height="72.4"/>
+      <rect x="160" y="3.8" width="1.3" height="72.4"/>
+      <rect x="240" y="3.8" width="1.3" height="72.4"/>
+      <rect x="320" y="3.8" width="1.3" height="72.4"/>
+      <rect x="400" y="3.8" width="1.3" height="72.4"/>
+    </g>
+
+    <!-- ============ 1 · pinwheel sun ============ -->
+    <g fill="#C9A45C" transform="translate(0 0)">
+      <path d="M40,40 L73,40 A33,33 0 0 1 68.58,56.5 Z"/>
+      <path d="M40,40 L56.5,68.58 A33,33 0 0 1 40,73 Z"/>
+      <path d="M40,40 L23.5,68.58 A33,33 0 0 1 11.42,56.5 Z"/>
+      <path d="M40,40 L7,40 A33,33 0 0 1 11.42,23.5 Z"/>
+      <path d="M40,40 L23.5,11.42 A33,33 0 0 1 40,7 Z"/>
+      <path d="M40,40 L56.5,11.42 A33,33 0 0 1 68.58,23.5 Z"/>
+    </g>
+
+    <!-- ============ 2 · X-grid, three registers ============ -->
+    <g stroke="#B4543A" stroke-width="2.1" stroke-linecap="round">
+      <path d="M89,12 L99,25 M99,12 L89,25   M105,12 L115,25 M115,12 L105,25
+               M121,12 L131,25 M131,12 L121,25  M137,12 L147,25 M147,12 L137,25"/>
+      <path d="M89,33 L99,46 M99,33 L89,46   M105,33 L115,46 M115,33 L105,46
+               M121,33 L131,46 M131,33 L121,46  M137,33 L147,46 M147,33 L137,46"/>
+      <path d="M89,54 L99,67 M99,54 L89,67   M105,54 L115,67 M115,54 L105,67
+               M121,54 L131,67 M131,54 L121,67  M137,54 L147,67 M147,54 L137,67"/>
+    </g>
+    <g fill="#C9A45C" fill-opacity=".5">
+      <rect x="86" y="28.6" width="64" height="1.2"/>
+      <rect x="86" y="49.6" width="64" height="1.2"/>
+    </g>
+
+    <!-- ============ 3 · diagonal lozenge chain ============ -->
+    <g transform="rotate(-43 200 40)">
+      <g fill="#C9A45C">
+        <path d="M169,40 L176,34 L183,40 L176,46 Z"/>
+        <path d="M185,40 L192,34 L199,40 L192,46 Z"/>
+        <path d="M201,40 L208,34 L215,40 L208,46 Z"/>
+        <path d="M217,40 L224,34 L231,40 L224,46 Z"/>
+      </g>
+      <g fill="#B4543A" fill-opacity=".85">
+        <rect x="166" y="30.4" width="68" height="1.5"/>
+        <rect x="166" y="48.1" width="68" height="1.5"/>
+      </g>
+    </g>
+
+    <!-- ============ 4 · dot rosettes ============ -->
+    <g fill="#B4543A">
+      <g transform="translate(262 24)">
+        <circle cx="0" cy="-7.5" r="2.7"/><circle cx="7.5" cy="0" r="2.7"/>
+        <circle cx="0" cy="7.5" r="2.7"/><circle cx="-7.5" cy="0" r="2.7"/>
+        <circle cx="0" cy="0" r="1.9" fill="#C9A45C"/>
+      </g>
+      <g transform="translate(298 24)">
+        <circle cx="0" cy="-7.5" r="2.7"/><circle cx="7.5" cy="0" r="2.7"/>
+        <circle cx="0" cy="7.5" r="2.7"/><circle cx="-7.5" cy="0" r="2.7"/>
+        <circle cx="0" cy="0" r="1.9" fill="#C9A45C"/>
+      </g>
+      <g transform="translate(262 56)">
+        <circle cx="0" cy="-7.5" r="2.7"/><circle cx="7.5" cy="0" r="2.7"/>
+        <circle cx="0" cy="7.5" r="2.7"/><circle cx="-7.5" cy="0" r="2.7"/>
+        <circle cx="0" cy="0" r="1.9" fill="#C9A45C"/>
+      </g>
+      <g transform="translate(298 56)">
+        <circle cx="0" cy="-7.5" r="2.7"/><circle cx="7.5" cy="0" r="2.7"/>
+        <circle cx="0" cy="7.5" r="2.7"/><circle cx="-7.5" cy="0" r="2.7"/>
+        <circle cx="0" cy="0" r="1.9" fill="#C9A45C"/>
+      </g>
+      <g fill="#C9A45C" fill-opacity=".4">
+        <rect x="246" y="39.4" width="68" height="1.2"/>
+      </g>
+    </g>
+
+    <!-- ============ 5 · comb rail ============ -->
+    <g fill="#C9A45C">
+      <rect x="326" y="11" width="3.6" height="58"/>
+      <rect x="334.5" y="11" width="1.5" height="58" fill-opacity=".6"/>
+      <rect x="341" y="11" width="3.6" height="58"/>
+      <rect x="349.5" y="11" width="1.5" height="58" fill-opacity=".6"/>
+      <rect x="356" y="11" width="3.6" height="58"/>
+      <rect x="364.5" y="11" width="1.5" height="58" fill-opacity=".6"/>
+      <rect x="371" y="11" width="3.6" height="58"/>
+      <rect x="379.5" y="11" width="1.5" height="58" fill-opacity=".6"/>
+      <rect x="386" y="11" width="3.6" height="58"/>
+    </g>
+    <g fill="#B4543A">
+      <rect x="324" y="9.2" width="68" height="1.8"/>
+      <rect x="324" y="69" width="68" height="1.8"/>
+    </g>
+
+    <!-- ============ 6 · chevron registers ============ -->
+    <g stroke="#B4543A" stroke-width="2.3" fill="none" stroke-linejoin="round">
+      <path d="M400,38 L408,26 L416,38 L424,26 L432,38 L440,26 L448,38 L456,26 L464,38 L472,26 L480,38"/>
+      <path d="M400,64 L408,52 L416,64 L424,52 L432,64 L440,52 L448,64 L456,52 L464,64 L472,52 L480,64"/>
+    </g>
+    <g fill="#C9A45C" fill-opacity=".45">
+      <rect x="400" y="41.4" width="80" height="1.2"/>
+    </g>
+
+  </g>
+</svg>
