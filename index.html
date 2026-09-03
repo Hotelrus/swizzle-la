@@ -116,6 +116,63 @@ h2.sect{
 @keyframes tapaflow{to{background-position:-192px center}}
 @media(prefers-reduced-motion:reduce){.trim.trim-tapa{animation:none}}
 
+/* ============================================================
+   SUGGESTIONS · whole tables, already built
+   The mechanic is lifted from the "Suggestions for Two / Three /
+   Four / Five" spread on the 1943 Don the Beachcomber menu: a guest
+   who does not know the food should not have to learn it before
+   they can order. Sets are priced at the exact a-la-carte sum,
+   rounded down to a clean figure - never above.
+   ============================================================ */
+.sugg{margin:clamp(32px,4vw,46px) 0 clamp(44px,5vw,62px)}
+.sugg-head{text-align:center;margin-bottom:clamp(22px,3vw,32px)}
+.sugg-head h3{
+  font-family:var(--serif);font-weight:500;font-size:12.5px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--gold-hi);margin:0;
+}
+.sugg-head p{
+  margin:11px auto 0;font-size:13.5px;color:var(--cream-faint);font-weight:300;
+  max-width:58ch;line-height:1.65;
+}
+.sugg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.sset{
+  border:1px solid var(--gold-dim);
+  background:linear-gradient(180deg,rgba(201,164,92,.07),rgba(201,164,92,.015));
+  padding:22px 20px 18px;display:flex;flex-direction:column;
+  transition:border-color .4s,transform .45s cubic-bezier(.2,.6,.2,1);
+}
+.sset:hover{border-color:var(--gold);transform:translateY(-5px)}
+.sset-head{
+  display:flex;flex-direction:column;gap:7px;align-items:center;text-align:center;
+  padding-bottom:14px;border-bottom:1px solid var(--gold-dim);
+}
+.sset-head h4{
+  font-family:var(--tiki);font-weight:400;font-size:20px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--gold-hi);margin:0;line-height:1;
+}
+.sset-head .sp{font-family:var(--serif);font-size:13px;letter-spacing:.1em;color:var(--gold)}
+.sset-body{flex:1;display:flex;flex-direction:column}
+.sset-body ul{list-style:none;margin:0;padding:13px 0;display:flex;flex-direction:column;gap:7px}
+.sset-body ul+ul{border-top:1px solid rgba(201,164,92,.16)}
+.sset-body li{
+  font-size:12.5px;color:var(--cream-dim);font-weight:300;line-height:1.45;
+  display:flex;gap:10px;align-items:flex-start;
+}
+/* every set item is a single order, so the quantity column carried no
+   information - a diamond keys the line instead, echoing .eyebrow .dia */
+.sset-body li .q{
+  width:4px;height:4px;flex:none;margin-top:6px;
+  background:var(--gold);transform:rotate(45deg);opacity:.7;
+}
+.sset-body li .sv{color:var(--cream-faint);font-size:11px;font-style:italic}
+.sset-note{
+  margin:0;padding-top:13px;border-top:1px solid var(--gold-dim);
+  font-family:var(--garalde);font-style:italic;font-size:13px;
+  color:var(--cream-faint);text-align:center;line-height:1.5;
+}
+@media(max-width:1000px){.sugg-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.sugg-grid{grid-template-columns:1fr;gap:14px}.sset{padding:18px 16px 15px}}
+
 /* buttons */
 .btn{
   display:inline-flex;align-items:center;gap:12px;
@@ -845,6 +902,96 @@ footer .wrap{position:relative;z-index:2}
   <div class="wrap">
     <div class="orn-title rv"><span class="dia"></span><h2 class="sect">The Book of Swizzle</h2><span class="dia"></span></div>
     <p class="menu-sub rv d1">Three chapters, one long night. All prices in Lao kip.</p>
+
+    <!-- Whole tables, pre-composed. See the .sugg CSS block for where the idea comes from. -->
+    <div class="sugg rv d2">
+      <div class="sugg-head">
+        <h3>Suggestions for the Table</h3>
+        <p>Sixty-five drinks is a lot to meet at once. These are whole tables, already built &mdash; something to pick at, something off the fire, a matched round and a sweet ending. Order one by its size.</p>
+      </div>
+      <div class="sugg-grid">
+
+        <div class="sset">
+          <div class="sset-head"><h4>For Two</h4><span class="sp">500,000</span></div>
+          <div class="sset-body">
+            <ul>
+              <li><span class="q"></span>Kaipen &amp; Jeow Bong</li>
+              <li><span class="q"></span>Sai Oua Skewers</li>
+              <li><span class="q"></span>Larb Gai</li>
+            </ul>
+            <ul>
+              <li><span class="q"></span>Sabaidee Swizzle</li>
+              <li><span class="q"></span>Mekong Mai Tai</li>
+            </ul>
+            <ul>
+              <li><span class="q"></span>Khao Niew Mak Muang</li>
+            </ul>
+          </div>
+          <p class="sset-note">The first visit, in the right order.</p>
+        </div>
+
+        <div class="sset">
+          <div class="sset-head"><h4>For Three</h4><span class="sp">700,000</span></div>
+          <div class="sset-body">
+            <ul>
+              <li><span class="q"></span>Kaipen &amp; Jeow Bong</li>
+              <li><span class="q"></span>Nam Khao Bites</li>
+              <li><span class="q"></span>Larb Gai</li>
+              <li><span class="q"></span>Ping Gai</li>
+            </ul>
+            <ul>
+              <li><span class="q"></span>Sabaidee Swizzle</li>
+              <li><span class="q"></span>Tamarind Temple</li>
+              <li><span class="q"></span>Mekong Mai Tai</li>
+            </ul>
+            <ul>
+              <li><span class="q"></span>Khao Niew Mak Muang</li>
+            </ul>
+          </div>
+          <p class="sset-note">Four plates, three drinks, no decisions.</p>
+        </div>
+
+        <div class="sset">
+          <div class="sset-head"><h4>For Four</h4><span class="sp">950,000</span></div>
+          <div class="sset-body">
+            <ul>
+              <li><span class="q"></span>Swizzle Pupu Platter</li>
+              <li><span class="q"></span>Volcano Ribs</li>
+              <li><span class="q"></span>Grilled Prawns</li>
+            </ul>
+            <ul>
+              <li><span class="q"></span>Lao Tiki Punch Bowl <span class="sv">serves four</span></li>
+            </ul>
+            <ul>
+              <li><span class="q"></span>Khao Niew Mak Muang</li>
+              <li><span class="q"></span>Fried Banana, Bolaven Coffee</li>
+            </ul>
+          </div>
+          <p class="sset-note">Built around the punch bowl.</p>
+        </div>
+
+        <div class="sset">
+          <div class="sset-head"><h4>For Five</h4><span class="sp">1,250,000</span></div>
+          <div class="sset-body">
+            <ul>
+              <li><span class="q"></span>Lao Grill Board</li>
+              <li><span class="q"></span>Kaipen &amp; Dips Board</li>
+              <li><span class="q"></span>Crispy Coconut Shrimp</li>
+            </ul>
+            <ul>
+              <li><span class="q"></span>Vientiane Volcano Bowl <span class="sv">serves four</span></li>
+              <li><span class="q"></span>Sabaidee Swizzle</li>
+              <li><span class="q"></span>Mekong Naga</li>
+            </ul>
+            <ul>
+              <li><span class="q"></span>Khao Niew Mak Muang</li>
+            </ul>
+          </div>
+          <p class="sset-note">The volcano, and enough fire to match it.</p>
+        </div>
+
+      </div>
+    </div>
     <div class="chapters rv d2" role="tablist" aria-label="Menu chapters">
       <button class="chapter-btn active" data-chapter="cocktails" role="tab" aria-selected="true"><span class="rom">I.</span>Cocktails</button>
       <button class="chapter-btn" data-chapter="food" role="tab" aria-selected="false"><span class="rom">II.</span>From the Fire</button>
