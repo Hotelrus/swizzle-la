@@ -10,51 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../blog/blog.css">
-<style>
-/* Archive index. Same documentary language as an individual record. */
-:root{--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-
-.rec{max-width:860px;margin:0 auto;padding:110px var(--pad) 40px}
-.eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
-.rec h1{font-family:var(--tiki);font-weight:400;font-size:clamp(28px,4.4vw,44px);
-  letter-spacing:.06em;text-transform:uppercase;color:var(--cream);line-height:1.2}
-.rec .sub{margin-top:18px;font-family:var(--garalde);font-style:italic;
-  font-size:19px;line-height:1.5;color:var(--cream-dim);max-width:62ch}
-.rec .intro{margin-top:22px;font-size:15.5px;line-height:1.7;color:var(--cream-dim);max-width:68ch}
-
-.sechead{margin:52px 0 20px}
-.sechead h2{font-family:var(--tiki);font-weight:400;font-size:clamp(19px,2.4vw,24px);
-  letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0}
-
-/* one record per row */
-.items{display:flex;flex-direction:column;gap:1px;background:var(--line);
-  border:1px solid var(--line)}
-.item{background:var(--jungle);display:grid;grid-template-columns:132px 1fr;gap:22px;
-  padding:20px 22px;align-items:start;text-decoration:none;transition:background .3s}
-a.item:hover{background:var(--jungle-2)}
-.item .thumb{border:1px solid var(--gold-dim);display:block;width:100%}
-/* an object on file but not yet determined: show it, and say so under it */
-.item .pending{margin-top:7px;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--cream-faint);text-align:center}
-.item .thumbwrap:has(.pending) .thumb{opacity:.62}
-.item .txt{min-width:0}
-.item .ref{font-family:var(--mono);font-size:11.5px;color:var(--gold);letter-spacing:.04em}
-.item h3{margin:7px 0 0;font-size:19px;font-weight:400;color:var(--cream);
-  font-family:var(--garalde);line-height:1.3}
-.item p{margin:9px 0 0;font-size:14px;line-height:1.6;color:var(--cream-faint);max-width:60ch}
-.item .tags{margin-top:13px;display:flex;flex-wrap:wrap;gap:8px}
-.tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;padding:4px 9px;
-  border:1px solid var(--line);color:var(--cream-faint)}
-.tag.pd{border-color:rgba(143,191,122,.5);color:#8FBF7A}
-.tag.open{border-color:var(--gold-dim);color:var(--gold)}
-.item .go{margin-top:13px;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-hi)}
-@media(max-width:560px){
-  .item{grid-template-columns:minmax(0,1fr);gap:16px}
-  .item .thumbwrap{max-width:150px}}
-
-.note{margin-top:44px;border-left:2px solid var(--gold-dim);padding:4px 0 4px 20px;
-  font-size:13.5px;line-height:1.7;color:var(--cream-faint);max-width:68ch}
-</style>
+<link rel="stylesheet" href="archive.css">
 </head>
 <body>
 <header class="nav">
@@ -109,22 +65,22 @@ a.item:hover{background:var(--jungle-2)}
       </div>
     </a>
 
-    <div class="item">
+    <a class="item" href="monitor-leader-1945/">
       <div class="thumbwrap">
         <img class="thumb" src="../assets/photos/clip-mountbatten-1945.jpg" alt="">
-        <div class="pending">Determination pending</div>
       </div>
       <div class="txt">
         <div class="ref">LCCN sn96077289 &middot; 1945-08-14</div>
         <h3>Monitor-Leader, 14 August 1945</h3>
-        <p>The V-J edition column naming Don the Beachcomber as the originator of the Zombie, and printing the two-drink limit as fact. Sourced from Chronicling America at the Library of Congress and cited in the article, but no renewal search has been run against it and no determination is recorded here yet.</p>
+        <p>The V-J edition column naming Don the Beachcomber as the originator of the Zombie, and printing the two-drink limit as fact. The newspaper never renewed its issue copyright, but the article is syndicated NEA copy and the syndicate was renewing contributions from June 1945. Not cleared, and the record explains why we quote it rather than reproduce it.</p>
         <div class="tags">
-          <span class="tag open">No determination on file</span>
-          <span class="tag">Source cited in article</span>
+          <span class="tag stop">Not cleared</span>
+          <span class="tag">Renewal search complete</span>
+          <span class="tag">Checked 2026-09-04</span>
         </div>
-        <div class="go"><a href="../blog/don-the-beachcomber/" style="color:var(--gold-hi);text-decoration:none">See it in the article &rarr;</a></div>
+        <div class="go">Read the record &rarr;</div>
       </div>
-    </div>
+    </a>
 
   </div>
 
