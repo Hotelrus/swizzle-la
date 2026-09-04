@@ -793,6 +793,33 @@ footer .wrap{position:relative;z-index:2}
   *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
   .rv{opacity:1;transform:none}
 }
+
+/* ---------- FAQ ----------
+   Plain <details> so every answer is real text in the page, not JS-rendered.
+   build.py reads this markup to generate the FAQPage JSON-LD, which keeps the
+   structured data and the visible words identical by construction. */
+.faq{position:relative;padding:clamp(60px,8vw,110px) 0}
+.faq-sub{text-align:center;max-width:60ch;margin:16px auto 0;color:var(--cream-dim)}
+.faq-list{max-width:820px;margin:44px auto 0;border-top:1px solid var(--line)}
+.faq-q{border-bottom:1px solid var(--line)}
+.faq-q summary{
+  list-style:none;cursor:pointer;padding:20px 44px 20px 4px;position:relative;
+  font-family:var(--body);font-size:clamp(15px,1.7vw,17px);font-weight:400;
+  color:var(--cream);transition:color .3s}
+.faq-q summary::-webkit-details-marker{display:none}
+.faq-q summary:hover{color:var(--gold-hi)}
+.faq-q summary::after{
+  content:"";position:absolute;right:10px;top:50%;width:11px;height:11px;
+  border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);
+  transform:translateY(-70%) rotate(45deg);transition:transform .3s}
+.faq-q[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.faq-q[open] summary{color:var(--gold-hi)}
+.faq-a{padding:0 44px 22px 4px}
+.faq-a p{margin:0 0 12px;color:var(--cream-dim);font-size:15.5px;line-height:1.75}
+.faq-a p:last-child{margin-bottom:0}
+.faq-a b{color:var(--cream);font-weight:500}
+.faq-a a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-dim)}
+.faq-a a:hover{color:var(--gold-hi)}
 </style>
 
 <link rel="canonical" href="https://swizzle.la/">
@@ -812,6 +839,7 @@ footer .wrap{position:relative;z-index:2}
 <meta name="geo.region" content="LA-VI">
 <meta name="geo.placename" content="Vientiane">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BarOrPub","@id":"https://swizzle.la/#bar","name":"Swizzle","alternateName":["Swizzle Tiki Bar","Swizzle Vientiane"],"description":"Swizzle is a tiki bar in Vientiane, Laos, hidden inside Noy's Fruit Heaven near Pha That Luang. Tropical cocktails built on Lao spirits, Lao fruit and house preparations. Fresh fruit and juice by day, tiki bar by night.","url":"https://swizzle.la/","telephone":"+856 20 55 396 898","email":"sabaidee@noysfruitheaven.com","priceRange":"$$","currenciesAccepted":"LAK","servesCuisine":["Cocktails","Tiki","Lao","Southeast Asian"],"address":{"@type":"PostalAddress","streetAddress":"Near Pha That Luang","addressLocality":"Vientiane","addressRegion":"Vientiane Capital","addressCountry":"LA"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday"],"opens":"17:00","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"17:00","closes":"01:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"17:00","closes":"23:00"}],"sameAs":["https://www.facebook.com/noysfruitheaven"],"image":"https://swizzle.la/assets/photos/header-bg.jpg","parentOrganization":{"@type":"Organization","name":"Noy's Fruit Heaven"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is there a tiki bar in Laos?","acceptedAnswer":{"@type":"Answer","text":"Yes. Swizzle is the first tiki bar in Laos, and for now the only one. It is in Vientiane, hidden inside Noy's Fruit Heaven near Pha That Luang: a fruit and juice bar by day, a tiki bar by night."}},{"@type":"Question","name":"Where exactly is Swizzle in Vientiane?","acceptedAnswer":{"@type":"Answer","text":"Near Pha That Luang, in Vientiane Capital. Look for the fruit stand: the bar is behind it, and the room does not announce itself until you are inside. That is deliberate."}},{"@type":"Question","name":"What are the opening hours?","acceptedAnswer":{"@type":"Answer","text":"Tuesday to Thursday, 5:00 PM to 11:30 PM. Friday and Saturday, 5:00 PM to 1:00 AM. Sunday, 5:00 PM to 11:00 PM. Closed Monday. The fruit bar at the front opens earlier, 8:00 AM to 5:00 PM, so the same address pours mango shakes in the morning and rum after dark."}},{"@type":"Question","name":"Do I need to book a table?","acceptedAnswer":{"@type":"Answer","text":"There are only 34 seats, so on Friday and Saturday we recommend it. Message us on WhatsApp or call +856 20 55 396 898. Earlier in the week you can usually walk in."}},{"@type":"Question","name":"What makes it a Lao tiki bar rather than a copy of an American one?","acceptedAnswer":{"@type":"Answer","text":"The technique is classic tiki: layered rums, fresh citrus, house syrups, crushed ice, mugs with faces. The flavours are Lao. We build on Laodi sugarcane rum distilled outside Vientiane, and on tamarind, mak kok, pandan, jasmine, Bolaven coffee and mak khaen, the northern prickly ash that numbs your lips. The syrups, cordials, orgeats and tinctures are made here rather than bought."}},{"@type":"Question","name":"What should I order on a first visit?","acceptedAnswer":{"@type":"Answer","text":"The Lao Tiki Punch. It is the cocktail that started our island story, and it is the one we would want you to judge us on. If you want the deep end, the Zombie. The limit is two per guest. Donn Beach set that limit in the 1930s and we keep it, and it is not a marketing line."}},{"@type":"Question","name":"Is there food, or only drinks?","acceptedAnswer":{"@type":"Answer","text":"Both. Lao classics like larb, tam mak hoong and or lam sit alongside tiki plates: grilled skewers, glazed ribs, a sharing platter built for the middle of the table. Bar snacks from 45,000 kip, sharing platters at 185,000."}},{"@type":"Question","name":"How much does a cocktail cost?","acceptedAnswer":{"@type":"Answer","text":"All prices in Lao kip. Zero-proof drinks from 45,000, core cocktails 110,000, house signatures 140,000, premium pours 195,000. Sharing bowls serve four."}},{"@type":"Question","name":"Do you make good drinks without alcohol?","acceptedAnswer":{"@type":"Answer","text":"Yes, and they are built the same way, not as an afterthought. The zero-proof drinks use the same house preparations as everything else: pineapple tepache, roselle cordial, black sesame orgeat. Tell the bar if you are avoiding alcohol completely and we will point you at the right one."}}]}</script>
 </head>
 <body>
 
@@ -1279,6 +1307,63 @@ footer .wrap{position:relative;z-index:2}
 </section>
 
 <!-- ================= CTA BAND ================= -->
+<!-- ================= FAQ ================= -->
+<section class="faq leafy" id="faq">
+  <div class="wrap">
+    <div class="orn-title rv"><span class="dia"></span><h2 class="sect">Questions We Get Asked</h2><span class="dia"></span></div>
+    <p class="faq-sub rv d1">Where we are, when we open, and what a tiki bar is doing in Laos.</p>
+
+    <div class="faq-list rv d2">
+
+      <details class="faq-q">
+        <summary>Is there a tiki bar in Laos?</summary>
+        <div class="faq-a"><p>Yes. <b>Swizzle</b> is the first tiki bar in Laos, and for now the only one. It is in Vientiane, hidden inside Noy's Fruit Heaven near Pha That Luang: a fruit and juice bar by day, a tiki bar by night.</p></div>
+      </details>
+
+      <details class="faq-q">
+        <summary>Where exactly is Swizzle in Vientiane?</summary>
+        <div class="faq-a"><p>Near <b>Pha That Luang</b>, in Vientiane Capital. Look for the fruit stand: the bar is behind it, and the room does not announce itself until you are inside. That is deliberate.</p></div>
+      </details>
+
+      <details class="faq-q">
+        <summary>What are the opening hours?</summary>
+        <div class="faq-a"><p>Tuesday to Thursday, 5:00 PM to 11:30 PM. Friday and Saturday, 5:00 PM to 1:00 AM. Sunday, 5:00 PM to 11:00 PM. Closed Monday.</p><p>The fruit bar at the front opens earlier, 8:00 AM to 5:00 PM, so the same address pours mango shakes in the morning and rum after dark.</p></div>
+      </details>
+
+      <details class="faq-q">
+        <summary>Do I need to book a table?</summary>
+        <div class="faq-a"><p>There are only <b>34 seats</b>, so on Friday and Saturday we recommend it. Message us on WhatsApp or call <b>+856 20 55 396 898</b>. Earlier in the week you can usually walk in.</p></div>
+      </details>
+
+      <details class="faq-q">
+        <summary>What makes it a Lao tiki bar rather than a copy of an American one?</summary>
+        <div class="faq-a"><p>The technique is classic tiki: layered rums, fresh citrus, house syrups, crushed ice, mugs with faces. The flavours are Lao.</p><p>We build on <b>Laodi</b> sugarcane rum distilled outside Vientiane, and on tamarind, mak kok, pandan, jasmine, Bolaven coffee and <b>mak khaen</b>, the northern prickly ash that numbs your lips. The syrups, cordials, orgeats and tinctures are made here rather than bought.</p></div>
+      </details>
+
+      <details class="faq-q">
+        <summary>What should I order on a first visit?</summary>
+        <div class="faq-a"><p>The <b>Lao Tiki Punch</b>. It is the cocktail that started our island story, and it is the one we would want you to judge us on.</p><p>If you want the deep end, the <b>Zombie</b>. The limit is two per guest. Donn Beach set that limit in the 1930s and we keep it, and it is not a marketing line.</p></div>
+      </details>
+
+      <details class="faq-q">
+        <summary>Is there food, or only drinks?</summary>
+        <div class="faq-a"><p>Both. Lao classics like larb, tam mak hoong and or lam sit alongside tiki plates: grilled skewers, glazed ribs, a sharing platter built for the middle of the table. Bar snacks from 45,000 kip, sharing platters at 185,000.</p></div>
+      </details>
+
+      <details class="faq-q">
+        <summary>How much does a cocktail cost?</summary>
+        <div class="faq-a"><p>All prices in Lao kip. Zero-proof drinks from <b>45,000</b>, core cocktails <b>110,000</b>, house signatures <b>140,000</b>, premium pours <b>195,000</b>. Sharing bowls serve four.</p></div>
+      </details>
+
+      <details class="faq-q">
+        <summary>Do you make good drinks without alcohol?</summary>
+        <div class="faq-a"><p>Yes, and they are built the same way, not as an afterthought. The zero-proof drinks use the same house preparations as everything else: pineapple tepache, roselle cordial, black sesame orgeat. Tell the bar if you are avoiding alcohol completely and we will point you at the right one.</p></div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
 <section class="cta" id="visit">
   <div class="wrap cta-in">
     <div class="cta-emblem rv" aria-hidden="true"><img class="champa" src="assets/Logos/champa_white.png" alt=""></div>
