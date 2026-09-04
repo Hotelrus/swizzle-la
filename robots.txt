@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Answer engines are welcome. The Journal and the Archive are original
+# research and we would rather be cited than scraped silently.
+Sitemap: https://swizzle.la/sitemap.xml
