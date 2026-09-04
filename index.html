@@ -421,10 +421,12 @@ nav.links a:hover::after{left:0;right:0}
   border-top:1px solid rgba(233,211,160,.4);border-bottom:1px solid rgba(233,211,160,.4);
   position:relative;
 }
-/* pattern pinned to the viewport; the band is a window you scroll past */
-.cta{clip-path:inset(0)}
+/* Texture tiles inside the band itself. It used to be a viewport-fixed layer
+   clipped to the section, which looked good on desktop but broke on iOS: a
+   fixed element inside a clip-path shifts as Safari collapses its address bar,
+   which put a visible seam across the pattern. */
 .cta::before{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
   background:url('assets/photos/tiki-doodles.png') repeat;background-size:460px;
   opacity:.07;
 }
@@ -624,9 +626,8 @@ footer{background:#0F1D15;padding:70px 0 0;position:relative;overflow:hidden}
 .keepers{background:var(--jungle-2);padding:clamp(80px,10vw,130px) 0;overflow:hidden}
 /* same tiki doodle sheet as the reservations band, over the green. .leafy owns
    ::before for the vignette, so the texture goes on ::after. */
-.keepers{clip-path:inset(0)}
 .keepers::after{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
   background:url('assets/photos/tiki-doodles.png') repeat;background-size:460px;
   opacity:.05;
 }
