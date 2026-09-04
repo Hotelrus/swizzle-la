@@ -476,6 +476,10 @@ footer{background:#0F1D15;padding:70px 0 0;position:relative;overflow:hidden}
   margin-top:60px;padding:22px 0 10px;border-top:1px solid rgba(201,164,92,.2);
   text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--cream-faint);
 }
+/* the Journal pages give footer links gold via blog.css; match that here so a
+   link in this line does not read as plain text */
+.foot-base a{color:var(--gold);text-decoration:none;transition:color .3s}
+.foot-base a:hover{color:var(--gold-hi)}
 .foot-credit{
   text-align:center;padding-bottom:22px;
   font-family:var(--garalde);font-style:italic;font-size:15px;letter-spacing:.04em;
@@ -1312,7 +1316,7 @@ footer .wrap{position:relative;z-index:2}
       </div>
     </div>
   </div>
-    <div class="foot-base">© 2026 Noy's Fruit Heaven · Swizzle · Vientiane, Lao PDR</div>
+    <div class="foot-base">© 2026 Noy's Fruit Heaven · Swizzle · Vientiane, Lao PDR &middot; <a href="archive/">The Archive</a></div>
     <p class="foot-credit">crafted in Vientiane by <a href="https://dev.kindee.app" target="_blank" rel="noopener">KinDee&nbsp;Dev</a></p>
 </footer>
 
