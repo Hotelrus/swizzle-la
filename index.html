@@ -458,13 +458,30 @@ footer{background:#0F1D15;padding:70px 0 0;position:relative;overflow:hidden}
 .foot-brand .brand-name{font-size:22px}
 .foot-brand .tiki-sub{font-family:var(--tiki);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-top:8px}
 .foot-brand p{font-size:13.5px;color:var(--cream-faint);max-width:280px;line-height:1.8;margin-top:16px}
-.socials{display:flex;gap:12px;margin-top:22px}
+/* carved-plaque socials — the tile art already carries its own frame and
+   shadow, so the link is just the image with a lift on hover */
+/* a 3x2 block rather than one row: the brand column is only ~300px wide, so
+   six in a line wraps 5+1 and reads like an accident */
+.socials{display:grid;grid-template-columns:repeat(3,44px);gap:10px;margin-top:22px}
 .socials a{
-  width:38px;height:38px;border:1px solid var(--gold-dim);border-radius:50%;
-  display:grid;place-items:center;color:var(--gold);font-family:var(--serif);font-size:13px;
-  transition:background .3s,color .3s;
+  display:block;width:44px;line-height:0;border-radius:9px;
+  filter:drop-shadow(0 4px 9px rgba(0,0,0,.45));
+  transition:transform .3s cubic-bezier(.2,.7,.3,1),filter .3s;
 }
-.socials a:hover{background:var(--gold);color:var(--jungle)}
+.socials a img{width:100%;height:auto;display:block}
+.socials a:hover{transform:translateY(-3px);
+  filter:drop-shadow(0 9px 16px rgba(0,0,0,.55)) brightness(1.12) saturate(1.04)}
+.socials a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+/* same plaques, small, as row markers in the Location / Contact columns.
+   flex on the row keeps a long address beside its icon instead of under it */
+.foot .rows a:has(.ico){display:flex;align-items:center;gap:9px}
+.foot .rows .ico{
+  width:22px;height:auto;flex:none;
+  filter:drop-shadow(0 2px 5px rgba(0,0,0,.5));
+}
+/* rows in those two columns that carry no icon still start on the same
+   left edge as the ones that do (22px icon + 9px gap) */
+.foot:not(.foot-hours) .rows > :not(:has(.ico)){padding-left:31px}
 .foot h4{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);font-weight:600}
 .foot .rows{margin-top:20px;display:grid;gap:10px;font-size:14px;color:var(--cream-dim)}
 .foot .rows .r{display:flex;justify-content:space-between;gap:14px;max-width:230px}
@@ -498,6 +515,11 @@ footer{background:#0F1D15;padding:70px 0 0;position:relative;overflow:hidden}
   .foot-grid{gap:30px 18px}
   .foot .rows{margin-top:14px;gap:8px;font-size:13.5px}
   .foot .rows .r{max-width:none}
+  /* the two columns are ~126px here — the alignment indent costs more than
+     it buys, so let icon-less rows use the full width */
+  .foot:not(.foot-hours) .rows > :not(:has(.ico)){padding-left:0}
+  .foot .rows a:has(.ico){gap:7px;align-items:start}
+  .foot .rows .ico{width:19px;margin-top:1px}
   .foot-hours{grid-column:1/-1}
   .foot-hours .rows{max-width:340px;margin-left:auto;margin-right:auto}
   .foot-hours{text-align:center}
@@ -833,6 +855,7 @@ footer .wrap{position:relative;z-index:2}
 <meta name="geo.region" content="LA-VI">
 <meta name="geo.placename" content="Vientiane">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BarOrPub","@id":"https://swizzle.la/#bar","name":"Swizzle","alternateName":["Swizzle Tiki Bar","Swizzle Vientiane"],"description":"Swizzle is a tiki bar in Vientiane, Laos, hidden inside Noy's Fruit Heaven near Pha That Luang. Tropical cocktails built on Lao spirits, Lao fruit and house preparations. Fresh fruit and juice by day, tiki bar by night. Opening 1 December 2026.","url":"https://swizzle.la/","telephone":"+856 20 55 396 898","email":"sabaidee@noysfruitheaven.com","priceRange":"$$","currenciesAccepted":"LAK","servesCuisine":["Cocktails","Tiki","Lao","Southeast Asian"],"address":{"@type":"PostalAddress","streetAddress":"Nongbone Road, near Pha That Luang","addressLocality":"Vientiane","addressRegion":"Vientiane Capital","addressCountry":"LA"},"geo":{"@type":"GeoCoordinates","latitude":17.9746049,"longitude":102.6305682},"hasMap":"https://www.google.com/maps/@17.9746049,102.6305682,19z","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"19:00","closes":"00:00","validFrom":"2026-12-01"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"19:00","closes":"01:00","validFrom":"2026-12-01"}],"sameAs":["https://www.facebook.com/noysfruitheaven"],"image":"https://swizzle.la/assets/photos/header-bg.jpg","parentOrganization":{"@type":"Organization","name":"Noy's Fruit Heaven"}}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K90TZM68MS"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-K90TZM68MS');</script>
 </head>
 <body>
 
@@ -1324,10 +1347,21 @@ footer .wrap{position:relative;z-index:2}
         <img src="assets/Logos/SWIZZLE%20LOGO/swizzle-logo-main.png" alt="Swizzle · Tropical Cocktails &amp; Food · Vientiane" style="width:190px;height:auto;margin-bottom:16px;filter:drop-shadow(0 8px 18px rgba(0,0,0,.5))">
         <p class="tiki-sub">Tiki Cocktails, Lao Soul</p>
         <p>A Lao tiki bar hiding inside a fruit stand near Pha That Luang. Fresh fruit by day, old rum by night, one gong at all hours.</p>
+        <!-- PLACEHOLDER LINKS: every href marked data-todo still needs the real
+             profile address. Grep `data-todo` to find them all. -->
         <div class="socials">
-          <a href="https://www.facebook.com/noysfruitheaven" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
-          <a href="https://noysfruitheaven.com" target="_blank" rel="noopener" aria-label="Noy's Fruit Heaven">N</a>
+          <a href="https://www.facebook.com/noysfruitheaven" target="_blank" rel="noopener" aria-label="Swizzle on Facebook">
+            <img src="assets/social/facebook.png" alt="Facebook" width="144" height="136" loading="lazy"></a>
+          <a href="#" data-todo target="_blank" rel="noopener" aria-label="Swizzle on Instagram">
+            <img src="assets/social/instagram.png" alt="Instagram" width="144" height="136" loading="lazy"></a>
+          <a href="#" data-todo target="_blank" rel="noopener" aria-label="Swizzle on TikTok">
+            <img src="assets/social/tiktok.png" alt="TikTok" width="144" height="136" loading="lazy"></a>
+          <a href="#" data-todo target="_blank" rel="noopener" aria-label="Swizzle on YouTube">
+            <img src="assets/social/youtube.png" alt="YouTube" width="144" height="136" loading="lazy"></a>
+          <a href="https://wa.me/8562055396898" target="_blank" rel="noopener" aria-label="Message Swizzle on WhatsApp">
+            <img src="assets/social/whatsapp.png" alt="WhatsApp" width="144" height="136" loading="lazy"></a>
+          <a href="#" data-todo target="_blank" rel="noopener" aria-label="Swizzle on Telegram">
+            <img src="assets/social/telegram.png" alt="Telegram" width="144" height="136" loading="lazy"></a>
         </div>
       </div>
       <div class="foot foot-hours">
@@ -1343,14 +1377,14 @@ footer .wrap{position:relative;z-index:2}
         <h4>Location</h4>
         <div class="rows">
           <span>Near Pha That Luang<br>Vientiane Capital, Lao PDR</span>
-          <a href="https://www.google.com/maps/@17.9746049,102.6305682,19z" target="_blank" rel="noopener" style="color:var(--gold)">⚲ View on Google Maps</a>
+          <a href="https://www.google.com/maps/@17.9746049,102.6305682,19z" target="_blank" rel="noopener" style="color:var(--gold)"><img class="ico" src="assets/social/location.png" alt="" aria-hidden="true" width="144" height="136" loading="lazy">View on Google Maps</a>
         </div>
       </div>
       <div class="foot">
         <h4>Contact</h4>
         <div class="rows">
-          <a href="tel:+8562055396898">+856 20 55 396 898</a>
-          <a href="mailto:sabaidee@noysfruitheaven.com">sabaidee@noysfruitheaven.com</a>
+          <a href="tel:+8562055396898"><img class="ico" src="assets/social/phone.png" alt="" aria-hidden="true" width="144" height="136" loading="lazy">+856 20 55 396 898</a>
+          <a href="mailto:sabaidee@noysfruitheaven.com"><img class="ico" src="assets/social/email.png" alt="" aria-hidden="true" width="144" height="136" loading="lazy">sabaidee@noysfruitheaven.com</a>
           <a href="https://www.noysfruitheaven.com" target="_blank" rel="noopener">www.noysfruitheaven.com</a>
         </div>
       </div>
