@@ -33,9 +33,10 @@
   padding:20px 22px;align-items:start;text-decoration:none;transition:background .3s}
 a.item:hover{background:var(--jungle-2)}
 .item .thumb{border:1px solid var(--gold-dim);display:block;width:100%}
-.item .noimg{border:1px solid var(--line);aspect-ratio:4/5;display:flex;align-items:center;
-  justify-content:center;font-family:var(--mono);font-size:10px;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--cream-faint);text-align:center;padding:10px;line-height:1.5}
+/* an object on file but not yet determined: show it, and say so under it */
+.item .pending{margin-top:7px;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--cream-faint);text-align:center}
+.item .thumbwrap:has(.pending) .thumb{opacity:.62}
 .item .txt{min-width:0}
 .item .ref{font-family:var(--mono);font-size:11.5px;color:var(--gold);letter-spacing:.04em}
 .item h3{margin:7px 0 0;font-size:19px;font-weight:400;color:var(--cream);
@@ -110,7 +111,8 @@ a.item:hover{background:var(--jungle-2)}
 
     <div class="item">
       <div class="thumbwrap">
-        <div class="noimg">Record<br>not yet<br>prepared</div>
+        <img class="thumb" src="../assets/photos/clip-mountbatten-1945.jpg" alt="">
+        <div class="pending">Determination pending</div>
       </div>
       <div class="txt">
         <div class="ref">LCCN sn96077289 &middot; 1945-08-14</div>
