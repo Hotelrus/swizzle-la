@@ -622,6 +622,14 @@ footer{background:#0F1D15;padding:70px 0 0;position:relative;overflow:hidden}
    THE KEEPERS · about us
    ============================================================ */
 .keepers{background:var(--jungle-2);padding:clamp(80px,10vw,130px) 0;overflow:hidden}
+/* same tiki doodle sheet as the reservations band, over the green. .leafy owns
+   ::before for the vignette, so the texture goes on ::after. */
+.keepers{clip-path:inset(0)}
+.keepers::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:url('assets/photos/tiki-doodles.png') repeat;background-size:460px;
+  opacity:.05;
+}
 .keepers-sub{text-align:center;margin-top:14px;font-family:var(--garalde);font-style:italic;font-size:18px;color:var(--cream-dim)}
 .keeper-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,4vw,50px);margin-top:clamp(38px,5vw,60px)}
 .keeper{
