@@ -794,6 +794,13 @@ footer .wrap{position:relative;z-index:2}
   .rv{opacity:1;transform:none}
 }
 
+/* pre-opening state. Remove this block, the .soon spans and the hours note
+   on opening night; everything else is already the live wording. */
+.hero-meta .soon b{color:var(--terra)}
+.hero-meta .soon{color:var(--cream)}
+.hours-note{margin-top:14px;font-size:11px;line-height:1.7;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--terra)}
+
 /* ---------- FAQ ----------
    Plain <details> so every answer is real text in the page, not JS-rendered.
    build.py reads this markup to generate the FAQPage JSON-LD, which keeps the
@@ -838,8 +845,8 @@ footer .wrap{position:relative;z-index:2}
 <meta name="twitter:image" content="https://swizzle.la/assets/photos/header-bg.jpg">
 <meta name="geo.region" content="LA-VI">
 <meta name="geo.placename" content="Vientiane">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BarOrPub","@id":"https://swizzle.la/#bar","name":"Swizzle","alternateName":["Swizzle Tiki Bar","Swizzle Vientiane"],"description":"Swizzle is a tiki bar in Vientiane, Laos, hidden inside Noy's Fruit Heaven near Pha That Luang. Tropical cocktails built on Lao spirits, Lao fruit and house preparations. Fresh fruit and juice by day, tiki bar by night.","url":"https://swizzle.la/","telephone":"+856 20 55 396 898","email":"sabaidee@noysfruitheaven.com","priceRange":"$$","currenciesAccepted":"LAK","servesCuisine":["Cocktails","Tiki","Lao","Southeast Asian"],"address":{"@type":"PostalAddress","streetAddress":"Nongbone Road, near Pha That Luang","addressLocality":"Vientiane","addressRegion":"Vientiane Capital","addressCountry":"LA"},"geo":{"@type":"GeoCoordinates","latitude":17.9746049,"longitude":102.6305682},"hasMap":"https://www.google.com/maps/@17.9746049,102.6305682,19z","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday"],"opens":"17:00","closes":"23:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"17:00","closes":"01:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"17:00","closes":"23:00"}],"sameAs":["https://www.facebook.com/noysfruitheaven"],"image":"https://swizzle.la/assets/photos/header-bg.jpg","parentOrganization":{"@type":"Organization","name":"Noy's Fruit Heaven"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is there a tiki bar in Laos?","acceptedAnswer":{"@type":"Answer","text":"Yes. Swizzle is the first tiki bar in Laos, and for now the only one. It is in Vientiane, hidden inside Noy's Fruit Heaven near Pha That Luang: a fruit and juice bar by day, a tiki bar by night."}},{"@type":"Question","name":"Where exactly is Swizzle in Vientiane?","acceptedAnswer":{"@type":"Answer","text":"Near Pha That Luang, in Vientiane Capital. Look for the fruit stand: the bar is behind it, and the room does not announce itself until you are inside. That is deliberate."}},{"@type":"Question","name":"What are the opening hours?","acceptedAnswer":{"@type":"Answer","text":"Tuesday to Thursday, 5:00 PM to 11:30 PM. Friday and Saturday, 5:00 PM to 1:00 AM. Sunday, 5:00 PM to 11:00 PM. Closed Monday. The fruit bar at the front opens earlier, 8:00 AM to 5:00 PM, so the same address pours mango shakes in the morning and rum after dark."}},{"@type":"Question","name":"Do I need to book a table?","acceptedAnswer":{"@type":"Answer","text":"There are only 34 seats, so on Friday and Saturday we recommend it. Message us on WhatsApp or call +856 20 55 396 898. Earlier in the week you can usually walk in."}},{"@type":"Question","name":"What makes it a Lao tiki bar rather than a copy of an American one?","acceptedAnswer":{"@type":"Answer","text":"The technique is classic tiki: layered rums, fresh citrus, house syrups, crushed ice, mugs with faces. The flavours are Lao. We build on Laodi sugarcane rum distilled outside Vientiane, and on tamarind, mak kok, pandan, jasmine, Bolaven coffee and mak khaen, the northern prickly ash that numbs your lips. The syrups, cordials, orgeats and tinctures are made here rather than bought."}},{"@type":"Question","name":"What should I order on a first visit?","acceptedAnswer":{"@type":"Answer","text":"The Lao Tiki Punch. It is the cocktail that started our island story, and it is the one we would want you to judge us on. If you want the deep end, the Zombie. The limit is two per guest. Donn Beach set that limit in the 1930s and we keep it, and it is not a marketing line."}},{"@type":"Question","name":"Is there food, or only drinks?","acceptedAnswer":{"@type":"Answer","text":"Both. Lao classics like larb, tam mak hoong and or lam sit alongside tiki plates: grilled skewers, glazed ribs, a sharing platter built for the middle of the table. Bar snacks from 45,000 kip, sharing platters at 185,000."}},{"@type":"Question","name":"How much does a cocktail cost?","acceptedAnswer":{"@type":"Answer","text":"All prices in Lao kip. Zero-proof drinks from 45,000, core cocktails 110,000, house signatures 140,000, premium pours 195,000. Sharing bowls serve four."}},{"@type":"Question","name":"Do you make good drinks without alcohol?","acceptedAnswer":{"@type":"Answer","text":"Yes, and they are built the same way, not as an afterthought. The zero-proof drinks use the same house preparations as everything else: pineapple tepache, roselle cordial, black sesame orgeat. Tell the bar if you are avoiding alcohol completely and we will point you at the right one."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BarOrPub","@id":"https://swizzle.la/#bar","name":"Swizzle","alternateName":["Swizzle Tiki Bar","Swizzle Vientiane"],"description":"Swizzle is a tiki bar in Vientiane, Laos, hidden inside Noy's Fruit Heaven near Pha That Luang. Tropical cocktails built on Lao spirits, Lao fruit and house preparations. Fresh fruit and juice by day, tiki bar by night. Opening 1 December 2026.","url":"https://swizzle.la/","telephone":"+856 20 55 396 898","email":"sabaidee@noysfruitheaven.com","priceRange":"$$","currenciesAccepted":"LAK","servesCuisine":["Cocktails","Tiki","Lao","Southeast Asian"],"address":{"@type":"PostalAddress","streetAddress":"Nongbone Road, near Pha That Luang","addressLocality":"Vientiane","addressRegion":"Vientiane Capital","addressCountry":"LA"},"geo":{"@type":"GeoCoordinates","latitude":17.9746049,"longitude":102.6305682},"hasMap":"https://www.google.com/maps/@17.9746049,102.6305682,19z","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"19:00","closes":"00:00","validFrom":"2026-12-01"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"19:00","closes":"01:00","validFrom":"2026-12-01"}],"sameAs":["https://www.facebook.com/noysfruitheaven"],"image":"https://swizzle.la/assets/photos/header-bg.jpg","parentOrganization":{"@type":"Organization","name":"Noy's Fruit Heaven"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are you open yet?","acceptedAnswer":{"@type":"Answer","text":"Not yet. Swizzle opens on 1 December 2026. The fruit bar at the front opens a month earlier, on 1 November. Until then the building is a construction site and there is nothing to come and see. Message us and we will tell you the night we light the torches."}},{"@type":"Question","name":"Is there a tiki bar in Laos?","acceptedAnswer":{"@type":"Answer","text":"Yes. Swizzle is the first tiki bar in Laos, and for now the only one. It is in Vientiane, hidden inside Noy's Fruit Heaven near Pha That Luang: a fruit and juice bar by day, a tiki bar by night."}},{"@type":"Question","name":"Where exactly is Swizzle in Vientiane?","acceptedAnswer":{"@type":"Answer","text":"Near Pha That Luang, in Vientiane Capital. Look for the fruit stand: the bar is behind it, and the room does not announce itself until you are inside. That is deliberate."}},{"@type":"Question","name":"What are the opening hours?","acceptedAnswer":{"@type":"Answer","text":"From 1 December 2026, every night: 7:00 PM to midnight Sunday through Thursday, and 7:00 PM to 1:00 AM on Friday and Saturday. The fruit bar at the front opens earlier, 9:00 AM to 7:00 PM daily from 1 November, so the same address pours mango shakes in the morning and rum after dark."}},{"@type":"Question","name":"Do I need to book a table?","acceptedAnswer":{"@type":"Answer","text":"There are only 34 seats, so for opening week and for Friday and Saturday nights, yes. Message us on WhatsApp or call +856 20 55 396 898 and we will put you on the list."}},{"@type":"Question","name":"What makes it a Lao tiki bar rather than a copy of an American one?","acceptedAnswer":{"@type":"Answer","text":"The technique is classic tiki: layered rums, fresh citrus, house syrups, crushed ice, mugs with faces. The flavours are Lao. We build on Laodi sugarcane rum distilled outside Vientiane, and on tamarind, mak kok, pandan, jasmine, Bolaven coffee and mak khaen, the northern prickly ash that numbs your lips. The syrups, cordials, orgeats and tinctures are made here rather than bought."}},{"@type":"Question","name":"What should I order on a first visit?","acceptedAnswer":{"@type":"Answer","text":"The Lao Tiki Punch. It is the cocktail that started our island story, and it is the one we would want you to judge us on. If you want the deep end, the Zombie. The limit is two per guest. Donn Beach set that limit in the 1930s and we keep it, and it is not a marketing line."}},{"@type":"Question","name":"Is there food, or only drinks?","acceptedAnswer":{"@type":"Answer","text":"Both. Lao classics like larb, tam mak hoong and or lam sit alongside tiki plates: grilled skewers, glazed ribs, a sharing platter built for the middle of the table. Bar snacks from 45,000 kip, sharing platters at 185,000."}},{"@type":"Question","name":"How much does a cocktail cost?","acceptedAnswer":{"@type":"Answer","text":"All prices in Lao kip. Zero-proof drinks from 45,000, core cocktails 110,000, house signatures 140,000, premium pours 195,000. Sharing bowls serve four."}},{"@type":"Question","name":"Do you make good drinks without alcohol?","acceptedAnswer":{"@type":"Answer","text":"Yes, and they are built the same way, not as an afterthought. The zero-proof drinks use the same house preparations as everything else: pineapple tepache, roselle cordial, black sesame orgeat. Tell the bar if you are avoiding alcohol completely and we will point you at the right one."}}]}</script>
 </head>
 <body>
 
@@ -858,7 +865,7 @@ footer .wrap{position:relative;z-index:2}
       <a href="blog/">Journal</a>
       <a href="#visit">Reservations</a>
     </nav>
-    <a href="#visit" class="btn nav-cta">Book a Table</a>
+    <a href="#visit" class="btn nav-cta">Opening List</a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -877,7 +884,8 @@ footer .wrap{position:relative;z-index:2}
         <a href="#cocktails" class="btn">Explore Our Cocktails</a>
       </div>
       <div class="hero-meta">
-        <span><b>Open</b> · Tue to Sun, 5pm till late</span>
+        <span class="soon"><b>Opening</b> · 1 December 2026</span>
+        <span><b>Then</b> · nightly from 7pm</span>
         <span><b>Seats</b> · 34, reserve ahead</span>
       </div>
     </div>
@@ -1315,6 +1323,11 @@ footer .wrap{position:relative;z-index:2}
 
     <div class="faq-list rv d2">
 
+      <details class="faq-q" open>
+        <summary>Are you open yet?</summary>
+        <div class="faq-a"><p>Not yet. <b>Swizzle opens on 1 December 2026.</b> The fruit bar at the front opens a month earlier, on 1 November.</p><p>Until then the building is a construction site and there is nothing to come and see. Message us and we will tell you the night we light the torches.</p></div>
+      </details>
+
       <details class="faq-q">
         <summary>Is there a tiki bar in Laos?</summary>
         <div class="faq-a"><p>Yes. <b>Swizzle</b> is the first tiki bar in Laos, and for now the only one. It is in Vientiane, hidden inside Noy's Fruit Heaven near Pha That Luang: a fruit and juice bar by day, a tiki bar by night.</p></div>
@@ -1327,12 +1340,12 @@ footer .wrap{position:relative;z-index:2}
 
       <details class="faq-q">
         <summary>What are the opening hours?</summary>
-        <div class="faq-a"><p>Tuesday to Thursday, 5:00 PM to 11:30 PM. Friday and Saturday, 5:00 PM to 1:00 AM. Sunday, 5:00 PM to 11:00 PM. Closed Monday.</p><p>The fruit bar at the front opens earlier, 8:00 AM to 5:00 PM, so the same address pours mango shakes in the morning and rum after dark.</p></div>
+        <div class="faq-a"><p>From <b>1 December 2026</b>, every night: 7:00 PM to midnight Sunday through Thursday, and 7:00 PM to 1:00 AM on Friday and Saturday.</p><p>The fruit bar at the front opens earlier, 9:00 AM to 7:00 PM daily from 1 November, so the same address pours mango shakes in the morning and rum after dark.</p></div>
       </details>
 
       <details class="faq-q">
         <summary>Do I need to book a table?</summary>
-        <div class="faq-a"><p>There are only <b>34 seats</b>, so on Friday and Saturday we recommend it. Message us on WhatsApp or call <b>+856 20 55 396 898</b>. Earlier in the week you can usually walk in.</p></div>
+        <div class="faq-a"><p>There are only <b>34 seats</b>, so for opening week and for Friday and Saturday nights, yes. Message us on WhatsApp or call <b>+856 20 55 396 898</b> and we will put you on the list.</p></div>
       </details>
 
       <details class="faq-q">
@@ -1369,11 +1382,11 @@ footer .wrap{position:relative;z-index:2}
     <div class="cta-emblem rv" aria-hidden="true"><img class="champa" src="assets/Logos/champa_white.png" alt=""></div>
     <h2 class="rv d1">Join us for an unforgettable experience</h2>
     <div class="cta-copy rv d2">
-      <p>Hidden behind the fruit stand near Pha That Luang. Good cocktails, warm people, and even warmer nights.</p>
+      <p>Hidden behind the fruit stand near Pha That Luang. Good cocktails, warm people, and even warmer nights. We open on <b>1 December 2026</b>: send us a message and we will tell you the night the torches are lit.</p>
     </div>
     <div class="cta-side rv d3">
-      <a class="btn" href="https://wa.me/8562055396898?text=Sabaidee!%20I%20would%20like%20to%20reserve%20a%20table%20at%20Swizzle." target="_blank" rel="noopener">Book a Table</a>
-      <small>or call +856 20 55 396 898</small>
+      <a class="btn" href="https://wa.me/8562055396898?text=Sabaidee!%20Please%20add%20me%20to%20the%20Swizzle%20opening%20list." target="_blank" rel="noopener">Join the Opening List</a>
+      <small>Opening 1 December 2026 · or call +856 20 55 396 898</small>
     </div>
   </div>
 </section>
@@ -1396,11 +1409,11 @@ footer .wrap{position:relative;z-index:2}
       <div class="foot foot-hours">
         <h4>Hours</h4>
         <div class="rows">
-          <div class="r"><span>Tue – Thu</span><span>5:00 PM – 11:30 PM</span></div>
-          <div class="r"><span>Fri – Sat</span><span>5:00 PM – 1:00 AM</span></div>
-          <div class="r"><span>Sunday</span><span>5:00 PM – 11:00 PM</span></div>
-          <div class="r"><span>Day (fruit)</span><span>8:00 AM – 5:00 PM</span></div>
+          <div class="r"><span>Sun – Thu</span><span>7:00 PM – 12:00 AM</span></div>
+          <div class="r"><span>Fri – Sat</span><span>7:00 PM – 1:00 AM</span></div>
+          <div class="r"><span>Fruit bar</span><span>9:00 AM – 7:00 PM</span></div>
         </div>
+        <p class="hours-note">Swizzle opens 1 December 2026.<br>The fruit bar opens 1 November.</p>
       </div>
       <div class="foot">
         <h4>Location</h4>
