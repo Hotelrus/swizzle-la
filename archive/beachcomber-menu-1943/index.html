@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Provenance: Don the Beachcomber menu, 1941 · Swizzle Archive</title>
+<meta name="description" content="A copyright-renewal search on the 1941 Don the Beachcomber menu, CHS2014.1476, and the reasoning behind the public domain determination.">
+<link rel="icon" type="image/png" href="../../assets/Logos/favicon-swizzle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../blog/blog.css">
+<style>
+/* Archive record. Reuses the Journal shell, adds a documentary layer:
+   tabular data, monospace figures, and a clear rights determination. */
+:root{--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+.rec{max-width:860px;margin:0 auto;padding:110px var(--pad) 40px}
+.rec .crumb{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--cream-faint)}
+.rec .crumb a{color:var(--cream-dim);text-decoration:none;border-bottom:1px solid var(--gold-dim)}
+.rec .crumb a:hover{color:var(--gold-hi)}
+
+.eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.rec h1{font-family:var(--tiki);font-weight:400;font-size:clamp(26px,4vw,40px);
+  letter-spacing:.06em;text-transform:uppercase;color:var(--cream);line-height:1.2;margin-top:14px}
+.rec .sub{margin-top:16px;font-family:var(--garalde);font-style:italic;
+  font-size:19px;line-height:1.5;color:var(--cream-dim);max-width:62ch}
+
+/* stamp strip */
+.stamp{display:flex;flex-wrap:wrap;gap:1px;margin-top:26px;background:var(--gold-dim);
+  border:1px solid var(--gold-dim)}
+.stamp div{flex:1 1 190px;background:var(--jungle-2);padding:12px 15px;min-width:0}
+.stamp .k{display:block;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.stamp .v{display:block;margin-top:5px;font-family:var(--mono);font-size:13px;color:var(--cream)}
+.stamp .ok .v{color:#8FBF7A}
+
+section.blk{margin-top:52px}
+.sechead{margin-bottom:20px}
+.sechead h2{font-family:var(--tiki);font-weight:400;font-size:clamp(19px,2.4vw,25px);
+  letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0}
+.rec p{color:var(--cream-dim);font-size:15.5px;margin:0 0 18px;max-width:68ch}
+.rec p:last-child{margin-bottom:0}
+.rec strong{color:var(--cream);font-weight:500}
+
+/* determination */
+.verdictbox{border:1px solid var(--gold);border-left-width:3px;background:rgba(201,164,92,.07);padding:22px 24px}
+.verdictbox .verdict{font-family:var(--garalde);font-size:21px;line-height:1.45;color:var(--gold-hi);margin-bottom:14px}
+
+/* field record */
+.fields{display:grid;grid-template-columns:auto 1fr;gap:9px 22px;
+  border-top:1px solid var(--line);padding-top:18px}
+.fields dt{font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+  white-space:nowrap;padding-top:3px}
+.fields dd{margin:0;color:var(--cream-dim);font-size:14.5px;min-width:0}
+.fields dd.num{font-family:var(--mono);font-size:13px;color:var(--cream)}
+@media(max-width:620px){.fields{grid-template-columns:minmax(0,1fr);gap:2px}
+  .fields dt{padding-top:14px}}
+
+/* the two scans */
+.plates{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:6px}
+.plates a{display:block;border:1px solid var(--gold-dim);position:relative}
+.plates img{display:block;width:100%}
+.plates .cap{margin-top:9px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--cream-faint)}
+@media(max-width:560px){.plates{grid-template-columns:minmax(0,1fr)}}
+
+/* the printed notice */
+.notice{margin:0;border-left:2px solid var(--gold);padding:6px 0 6px 24px}
+.notice blockquote{font-family:var(--garalde);font-style:italic;font-size:20px;line-height:1.5;color:var(--gold-hi)}
+.notice figcaption{margin-top:14px;font-size:13.5px;line-height:1.6;color:var(--cream-faint);max-width:64ch}
+
+/* chronology */
+.chron{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;
+  border-top:1px solid var(--gold-dim);padding-top:0}
+.chron .pt{padding-top:22px;position:relative;display:flex;flex-direction:column;gap:6px;min-width:0}
+.chron .pt::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;
+  transform:rotate(45deg);background:var(--gold-dim)}
+.chron .pt.key::before{background:var(--gold)}
+.chron .pt.pd::before{background:#8FBF7A}
+.chron .yr{font-family:var(--mono);font-size:16px;font-weight:500;color:var(--cream)}
+.chron .pt.pd .yr{color:#8FBF7A}
+.chron .lb{font-size:13px;line-height:1.45;color:var(--cream-faint)}
+@media(max-width:720px){.chron{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 16px}}
+@media(max-width:420px){.chron{grid-template-columns:minmax(0,1fr)}}
+
+/* evidence table */
+.tablewrap{overflow-x:auto;border:1px solid var(--line)}
+/* min-width sits just under the 740px content area so the table fits whole on
+   desktop and only scrolls once the viewport genuinely cannot hold it */
+table{border-collapse:collapse;width:100%;min-width:44rem;font-size:13.5px;table-layout:fixed}
+col.c1{width:17%}col.c2{width:24%}col.c3{width:17%}col.c4{width:22%}col.c5{width:20%}
+thead th{text-align:left;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;
+  font-weight:500;color:var(--gold);padding:12px 15px;background:var(--jungle-2);
+  border-bottom:1px solid var(--gold-dim);white-space:nowrap}
+tbody td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--cream-dim)}
+tbody tr:last-child td{border-bottom:none}
+tbody .src{color:var(--cream);font-weight:500}
+tbody .terms{font-family:var(--mono);font-size:11.5px;line-height:1.6;color:var(--cream-faint)}
+tbody .res{font-family:var(--mono);font-size:12.5px;line-height:1.6;overflow-wrap:anywhere}
+.zero{color:#8FBF7A;font-weight:500}
+tr.control td{background:rgba(0,0,0,.2)}
+
+/* specimen */
+.specimen{border:1px solid var(--line);background:rgba(0,0,0,.2);padding:20px 22px}
+.specimen pre{margin:0 0 14px;font-family:var(--mono);font-size:12.5px;line-height:1.75;
+  color:var(--gold-hi);white-space:pre-wrap;overflow-wrap:anywhere}
+.specimen .gloss{font-size:14px;color:var(--cream-faint);margin:0;max-width:68ch}
+.specimen .gloss b{color:var(--gold);font-weight:500;font-family:var(--mono);font-size:12.5px}
+
+/* limits */
+.limits{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line)}
+.limits .lim{background:var(--jungle);padding:18px 20px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.limits h3{font-size:13px;letter-spacing:.04em;color:var(--cream);font-weight:500;margin:0}
+.limits p{margin:0;font-size:13.5px;line-height:1.55;color:var(--cream-faint)}
+@media(max-width:620px){.limits{grid-template-columns:minmax(0,1fr)}}
+
+/* caution */
+.caution{background:rgba(180,84,58,.12);border:1px solid var(--terra);border-left-width:3px;padding:22px 24px}
+.caution .eyebrow{color:var(--terra)}
+.caution p{font-size:14.5px;color:var(--cream-dim)}
+.caution p:last-child{margin-bottom:0}
+
+/* sources */
+.sources ol{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:11px}
+.sources li{font-size:13.5px;line-height:1.55;color:var(--cream-faint)}
+.sources a{color:var(--cream-dim);text-decoration:underline;text-underline-offset:3px}
+.sources a:hover{color:var(--gold-hi)}
+
+.recfoot{margin-top:52px;border-top:1px solid var(--line);padding-top:20px;
+  font-size:13px;line-height:1.6;color:var(--cream-faint);max-width:68ch}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="../../" aria-label="Swizzle home">
+      <img class="brand-wide" src="../../assets/Logos/swizzle-logo-header.png" alt="Swizzle · Tropical Cocktails &amp; Food">
+    </a>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="../../">Home</a>
+      <a href="../../#cocktails">Cocktails</a>
+      <a href="../../#menu">Menu</a>
+      <a href="../../#story">Story</a>
+      <a href="../../blog/">Journal</a>
+      <a href="../../#visit">Reservations</a>
+    </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+  </div>
+</header>
+
+<div class="rec">
+
+  <div class="crumb"><a href="../">&larr; The Archive</a> &nbsp;·&nbsp; <a href="../../blog/don-the-beachcomber/">The Man Who Invented an Island</a></div>
+
+  <header>
+    <div class="eyebrow" style="margin-top:26px">Provenance and Rights Record</div>
+    <h1>Don the Beachcomber menu 1941</h1>
+    <p class="sub">A copyright renewal search, and its result, recorded against the physical item held at Stanford.</p>
+    <div class="stamp">
+      <div><span class="k">Item</span><span class="v">CHS2014.1476</span></div>
+      <div><span class="k">Checked</span><span class="v">2026-09-03</span></div>
+      <div class="ok"><span class="k">Determination</span><span class="v">Public domain (US)</span></div>
+    </div>
+  </header>
+
+  <section class="blk">
+    <div class="verdictbox">
+      <div class="eyebrow">Determination</div>
+      <p class="verdict">The 1941 copyright was not renewed. The work has been in the public domain in the United States since 1 January 1970.</p>
+      <p>Published in the US in 1941 bearing a valid copyright notice, the menu received a 28 year initial term under the 1909 Act. Renewal was an affirmative filing due in the 28th year, during 1968 or 1969. No renewal registration exists in either of the two record sets that would contain one.</p>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="sechead">
+      <div class="eyebrow">The object</div>
+      <h2>What was examined</h2>
+    </div>
+
+    <div class="plates">
+      <div>
+        <a href="../../assets/photos/menu-1943-cover-full.jpg" target="_blank" rel="noopener">
+          <img src="../../assets/photos/menu-1943-cover.jpg" alt="Front cover of the menu: a hand-painted map of the Pacific">
+        </a>
+        <div class="cap">[a] Front cover, the Pacific chart</div>
+      </div>
+      <div>
+        <a href="../../assets/photos/menu-1943-dishes-full.jpg" target="_blank" rel="noopener">
+          <img src="../../assets/photos/menu-1943-dishes.jpg" alt="Back cover of the menu listing original tropical dishes with wartime prices">
+        </a>
+        <div class="cap">[b] Back cover, the dish list</div>
+      </div>
+    </div>
+
+    <dl class="fields" style="margin-top:30px">
+      <dt>Title</dt><dd>Don the Beachcomber (Hollywood, Polynesian, Chinese)</dd>
+      <dt>Holding institution</dt><dd>California Historical Society Collection, Department of Special Collections, Stanford University Libraries</dd>
+      <dt>Call number</dt><dd class="num">CHS2014.1476 [a], [b]</dd>
+      <dt>Catalogued date</dt><dd class="num">1943</dd>
+      <dt>Copyright claim on item</dt><dd class="num">1941</dd>
+      <dt>Printing dated by</dt><dd>OPA wartime ceiling price notice, 4 to 10 April 1943</dd>
+      <dt>Issuing addresses</dt><dd>1727 No. McCadden Place, Hollywood, California (est. 1933) &middot; 101 East Walton Place, Chicago, Illinois (est. 1940)</dd>
+      <dt>Artist</dt><dd>Uncredited</dd>
+      <dt>Front cover</dt><dd class="num">CHS2014.1476 [a].tif &middot; 4731 &times; 5558 px, 600 dpi, 78.9 MB</dd>
+      <dt>Back cover</dt><dd class="num">CHS2014.1476 [b].tif &middot; 4731 &times; 5558 px, 600 dpi, 78.9 MB</dd>
+      <dt>Reference scan</dt><dd class="num">4 pp., 20.2 MB. Envelope, front, inside spread, back.</dd>
+      <dt>Note</dt><dd>The inside spread, and with it the copyright notice, exists only in the lower resolution PDF. Not yet supplied at 600 dpi.</dd>
+    </dl>
+  </section>
+
+  <section class="blk">
+    <div class="sechead">
+      <div class="eyebrow">The notice</div>
+      <h2>Printed at the foot of the inside spread</h2>
+    </div>
+    <figure class="notice">
+      <blockquote>All rights reserved in all countries. Reproduction in whole or in part prohibited. Copyright, 1941, Don the Beachcomber.</blockquote>
+      <figcaption>A properly formed 1909 Act notice: word, year, proprietor. Its presence rules out the shortcut that carries most restaurant ephemera into the public domain, publication without notice, and makes the renewal question dispositive. No second notice appears on the front cover, the back cover, or either TIFF edge.</figcaption>
+    </figure>
+  </section>
+
+  <section class="blk">
+    <div class="sechead">
+      <div class="eyebrow">Term</div>
+      <h2>How the copyright ran out</h2>
+    </div>
+    <div class="chron">
+      <div class="pt key"><span class="yr">1941</span><span class="lb">Published with notice. First term of 28 years begins.</span></div>
+      <div class="pt"><span class="yr">1943</span><span class="lb">This printing. The same 1941 claim carried forward.</span></div>
+      <div class="pt key"><span class="yr">1968&ndash;69</span><span class="lb">Renewal window, the 28th year. A filing was required here. None was made.</span></div>
+      <div class="pt pd"><span class="yr">1970</span><span class="lb">Term expires 1 January. The work enters the public domain, permanently.</span></div>
+    </div>
+    <p style="margin-top:26px">Cornell's public domain chart states the rule for this row, published 1931 through 1963, with notice, copyright not renewed, as: <strong>"None. In the public domain due to copyright expiration."</strong></p>
+  </section>
+
+  <section class="blk">
+    <div class="sechead">
+      <div class="eyebrow">Evidence</div>
+      <h2>What the searches returned</h2>
+    </div>
+    <p>A menu could have been registered as a pictorial work or as a pamphlet, so both classes were searched. The final row is a control: it confirms the corpus actually contains renewals originating in 1941, so the zeroes above it mean absence rather than a gap in the transcription.</p>
+    <div class="tablewrap">
+      <table>
+        <colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"><col class="c5"></colgroup>
+        <thead>
+          <tr><th scope="col">Record set</th><th scope="col">Scope</th><th scope="col">Window</th><th scope="col">Terms</th><th scope="col">Result</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="src">CCE Artwork Renewals 1965&ndash;1977<br><span class="terms">Project Gutenberg #70611</span></td>
+            <td>Works of art, scientific and technical drawings, photographs, prints and pictorial illustrations. Classes G, H, I, J, K</td>
+            <td class="res">All four half-year volumes, 1968 + 1969</td>
+            <td class="terms">Beachcomber · Beach comber · Gantt · Sund · Sunset Corp · tiki · Polynesian · Trader Vic · Bergeron</td>
+            <td class="res"><span class="zero">0 hits</span></td>
+          </tr>
+          <tr>
+            <td class="src">Stanford Copyright Renewal Database</td>
+            <td>Books and pamphlets, Class A</td>
+            <td class="res">All renewal years</td>
+            <td class="terms">"don the beachcomber"</td>
+            <td class="res"><span class="zero">0 hits</span></td>
+          </tr>
+          <tr>
+            <td class="src">Stanford Copyright Renewal Database</td>
+            <td>Books and pamphlets, Class A</td>
+            <td class="res">All renewal years</td>
+            <td class="terms">"beachcomber"</td>
+            <td class="res">2. W. McFee novel (1935); children's book (1960). Neither related.</td>
+          </tr>
+          <tr>
+            <td class="src">Stanford Copyright Renewal Database</td>
+            <td>Books and pamphlets, Class A</td>
+            <td class="res">All renewal years</td>
+            <td class="terms">"gantt"</td>
+            <td class="res">4. All W. Horsley Gantt, physiologist. No relation to Ernest R. B. Gantt.</td>
+          </tr>
+          <tr class="control">
+            <td class="src">Control</td>
+            <td>Renewals of works published in 1941, inside the 1968 volumes of the same artwork corpus</td>
+            <td class="res">1968</td>
+            <td class="terms">&mdash;</td>
+            <td class="res">185 present</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="sechead">
+      <div class="eyebrow">Base rate</div>
+      <h2>The only menu renewed in thirteen years of filings</h2>
+    </div>
+    <div class="specimen">
+<pre>Pinocchio with tray. Menu. &copy; 15Nov39; K42741. Walt Disney
+Productions (PWH); 20Dec66; R398956.</pre>
+      <p class="gloss">Across the entire 1965 to 1977 artwork renewal corpus, this is the sole restaurant menu. Reading the entry: original registration <b>K42741</b> on 15 November 1939, renewed as <b>R398956</b> on 20 December 1966 by the proprietor of copyright in a work made for hire. The renewals that got filed belonged to organisations running standing copyright programmes with the calendar watched. For scale, Stanford's Class A database returns 13 results for "menu" and 20 for "restaurant" across all years and all claimants.</p>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="sechead">
+      <div class="eyebrow">Limits</div>
+      <h2>What this finding does and does not establish</h2>
+    </div>
+    <div class="limits">
+      <div class="lim">
+        <h3>It is a negative in a transcribed corpus</h3>
+        <p>Not a title search from the Copyright Office. OCR and transcription errors are possible in any digitised index.</p>
+      </div>
+      <div class="lim">
+        <h3>Both indexes are claimant arranged</h3>
+        <p>A renewal filed under a proprietor name not among the terms searched would not surface. Claimant side names and subject terms were both tried.</p>
+      </div>
+      <div class="lim">
+        <h3>The negative is consistent across two independent sets</h3>
+        <p>Different classes, different compilers, same result. That is what raises this from a single silence to a reliable one.</p>
+      </div>
+      <div class="lim">
+        <h3>Certainty is purchasable</h3>
+        <p>The Copyright Office produces search reports for a fee. That is the instrument that converts strong confidence into a citable finding, should it ever be needed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk">
+    <div class="caution">
+      <div class="eyebrow">Separate from copyright, still live</div>
+      <p><strong>Trademark.</strong> "Don the Beachcomber" is an active mark that has changed hands repeatedly and is being commercially revived. Public domain in the 1941 artwork does nothing for you on the name. The art is reproduced here as historical record, in an article about the business that printed it. It does not go on our own menu, signage or merchandise, and nothing here implies affiliation.</p>
+      <p><strong>The institutional slip.</strong> The archival envelope carries a printed note reading "Scans are for reference use only. Further reproduction requires permission from the Department of Special Collections, Stanford University Libraries." This is an access assertion, not a copyright claim. Special Collections stated in writing on 2 September 2026 that CHS holds the physical copies only, holds no copyright, and cannot grant or withhold usage permission. Under <em>Bridgeman v. Corel</em>, a faithful flat reproduction of a two dimensional public domain work generates no new copyright in the United States, so the scans carry no separate term of their own. No licence agreement was signed.</p>
+    </div>
+  </section>
+
+  <section class="blk sources">
+    <div class="sechead">
+      <div class="eyebrow">Sources consulted</div>
+      <h2>References</h2>
+    </div>
+    <ol>
+      <li><a href="https://www.gutenberg.org/files/70611/70611-h/70611-h.htm" target="_blank" rel="noopener"><em>U.S. Copyright Renewals: Artwork 1965 to 1977</em></a>. Project Gutenberg #70611, transcribed from the Library of Congress <em>Catalog of Copyright Entries</em>.</li>
+      <li><a href="https://exhibits.stanford.edu/copyrightrenewals" target="_blank" rel="noopener">Stanford Copyright Renewal Database</a>. Class A renewal registrations.</li>
+      <li><a href="https://guides.library.cornell.edu/copyright/publicdomain" target="_blank" rel="noopener">Copyright Term and the Public Domain in the United States</a>. Cornell University Library, the chart Special Collections referred us to.</li>
+      <li><a href="https://onlinebooks.library.upenn.edu/cce/" target="_blank" rel="noopener">The Catalog of Copyright Entries</a>. Online Books Page, University of Pennsylvania. Used to identify which volumes carry 1968 to 1969 renewals by class.</li>
+      <li>Correspondence with the CHS Collection at Stanford team, Special Collections, Stanford University Libraries, 2 September 2026.</li>
+    </ol>
+  </section>
+
+  <p class="recfoot">Prepared 3 September 2026 for the Swizzle archive. This record states the result of a documentary search and the reasoning applied to it. It is not legal advice.</p>
+
+</div>
+
+<div class="post-foot"><a class="btn" href="../../blog/don-the-beachcomber/">&larr; Back to the article</a><a class="btn" href="../../blog/">The Journal</a></div>
+<div class="trim" aria-hidden="true"></div>
+<footer>
+  <div class="foot-base">© 2026 Noy's Fruit Heaven · Swizzle · Vientiane, Lao PDR · <a href="../../blog/">The Journal</a></div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'), l=document.getElementById('links');
+  if(!b||!l) return;
+  b.addEventListener('click',function(){
+    var open=l.classList.toggle('open');
+    b.classList.toggle('open',open);
+    b.setAttribute('aria-expanded',open);
+  });
+})();
+</script>
+</body>
+</html>

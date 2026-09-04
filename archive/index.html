@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Archive · Swizzle</title>
+<meta name="description" content="Provenance and rights records for the historical material reproduced in the Swizzle Journal. What each object is, where it is held, and why we are entitled to show it.">
+<link rel="icon" type="image/png" href="../assets/Logos/favicon-swizzle.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../blog/blog.css">
+<style>
+/* Archive index. Same documentary language as an individual record. */
+:root{--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+.rec{max-width:860px;margin:0 auto;padding:110px var(--pad) 40px}
+.eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.rec h1{font-family:var(--tiki);font-weight:400;font-size:clamp(28px,4.4vw,44px);
+  letter-spacing:.06em;text-transform:uppercase;color:var(--cream);line-height:1.2}
+.rec .sub{margin-top:18px;font-family:var(--garalde);font-style:italic;
+  font-size:19px;line-height:1.5;color:var(--cream-dim);max-width:62ch}
+.rec .intro{margin-top:22px;font-size:15.5px;line-height:1.7;color:var(--cream-dim);max-width:68ch}
+
+.sechead{margin:52px 0 20px}
+.sechead h2{font-family:var(--tiki);font-weight:400;font-size:clamp(19px,2.4vw,24px);
+  letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin:0}
+
+/* one record per row */
+.items{display:flex;flex-direction:column;gap:1px;background:var(--line);
+  border:1px solid var(--line)}
+.item{background:var(--jungle);display:grid;grid-template-columns:132px 1fr;gap:22px;
+  padding:20px 22px;align-items:start;text-decoration:none;transition:background .3s}
+a.item:hover{background:var(--jungle-2)}
+.item .thumb{border:1px solid var(--gold-dim);display:block;width:100%}
+.item .noimg{border:1px solid var(--line);aspect-ratio:4/5;display:flex;align-items:center;
+  justify-content:center;font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--cream-faint);text-align:center;padding:10px;line-height:1.5}
+.item .txt{min-width:0}
+.item .ref{font-family:var(--mono);font-size:11.5px;color:var(--gold);letter-spacing:.04em}
+.item h3{margin:7px 0 0;font-size:19px;font-weight:400;color:var(--cream);
+  font-family:var(--garalde);line-height:1.3}
+.item p{margin:9px 0 0;font-size:14px;line-height:1.6;color:var(--cream-faint);max-width:60ch}
+.item .tags{margin-top:13px;display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;padding:4px 9px;
+  border:1px solid var(--line);color:var(--cream-faint)}
+.tag.pd{border-color:rgba(143,191,122,.5);color:#8FBF7A}
+.tag.open{border-color:var(--gold-dim);color:var(--gold)}
+.item .go{margin-top:13px;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-hi)}
+@media(max-width:560px){
+  .item{grid-template-columns:minmax(0,1fr);gap:16px}
+  .item .thumbwrap{max-width:150px}}
+
+.note{margin-top:44px;border-left:2px solid var(--gold-dim);padding:4px 0 4px 20px;
+  font-size:13.5px;line-height:1.7;color:var(--cream-faint);max-width:68ch}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="../" aria-label="Swizzle home">
+      <img class="brand-wide" src="../assets/Logos/swizzle-logo-header.png" alt="Swizzle · Tropical Cocktails &amp; Food">
+    </a>
+    <nav class="links" id="links" aria-label="Main">
+      <a href="../">Home</a>
+      <a href="../#cocktails">Cocktails</a>
+      <a href="../#menu">Menu</a>
+      <a href="../#story">Story</a>
+      <a href="../blog/">Journal</a>
+      <a href="../#visit">Reservations</a>
+    </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+  </div>
+</header>
+
+<div class="rec">
+
+  <header>
+    <div class="eyebrow">Swizzle</div>
+    <h1>The Archive</h1>
+    <p class="sub">Every historical object we reproduce, and the reason we are entitled to reproduce it.</p>
+    <p class="intro">The Journal runs on real documents: menus, newspaper pages, photographs held in institutional collections. Showing them properly means knowing what each one is, who holds it, and where its copyright stands. These records set that out in full, including the searches that were run and the limits of what they prove. They are working documents rather than legal advice, and we would rather publish the reasoning than ask you to take the caption on trust.</p>
+  </header>
+
+  <div class="sechead">
+    <div class="eyebrow">Records</div>
+    <h2>Objects on file</h2>
+  </div>
+
+  <div class="items">
+
+    <a class="item" href="beachcomber-menu-1943/">
+      <div class="thumbwrap">
+        <img class="thumb" src="../assets/photos/menu-1943-cover.jpg" alt="">
+      </div>
+      <div class="txt">
+        <div class="ref">CHS2014.1476 [a], [b]</div>
+        <h3>Don the Beachcomber menu, 1941</h3>
+        <p>The Hollywood wartime menu: a hand-painted Pacific chart on the front, the original tropical dish list on the back. Held in the California Historical Society Collection at Stanford University Libraries. A copyright renewal search across two independent record sets, with a control row to prove the corpus was not simply silent.</p>
+        <div class="tags">
+          <span class="tag pd">Public domain (US)</span>
+          <span class="tag">Renewal search complete</span>
+          <span class="tag">Checked 2026-09-03</span>
+        </div>
+        <div class="go">Read the record &rarr;</div>
+      </div>
+    </a>
+
+    <div class="item">
+      <div class="thumbwrap">
+        <div class="noimg">Record<br>not yet<br>prepared</div>
+      </div>
+      <div class="txt">
+        <div class="ref">LCCN sn96077289 &middot; 1945-08-14</div>
+        <h3>Monitor-Leader, 14 August 1945</h3>
+        <p>The V-J edition column naming Don the Beachcomber as the originator of the Zombie, and printing the two-drink limit as fact. Sourced from Chronicling America at the Library of Congress and cited in the article, but no renewal search has been run against it and no determination is recorded here yet.</p>
+        <div class="tags">
+          <span class="tag open">No determination on file</span>
+          <span class="tag">Source cited in article</span>
+        </div>
+        <div class="go"><a href="../blog/don-the-beachcomber/" style="color:var(--gold-hi);text-decoration:none">See it in the article &rarr;</a></div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="note">A record is added when an object is reproduced at any size beyond a passing citation. Where a determination has not been made, the entry says so rather than implying one. Nothing in this archive is legal advice.</p>
+
+</div>
+
+<div class="post-foot"><a class="btn" href="../blog/">The Journal</a><a class="btn" href="../">Home</a></div>
+<div class="trim" aria-hidden="true"></div>
+<footer>
+  <div class="foot-base">© 2026 Noy's Fruit Heaven · Swizzle · Vientiane, Lao PDR · <a href="../blog/">The Journal</a></div>
+</footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'), l=document.getElementById('links');
+  if(!b||!l) return;
+  b.addEventListener('click',function(){
+    var open=l.classList.toggle('open');
+    b.classList.toggle('open',open);
+    b.setAttribute('aria-expanded',open);
+  });
+})();
+</script>
+</body>
+</html>
