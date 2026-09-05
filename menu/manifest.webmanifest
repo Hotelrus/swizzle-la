@@ -1,0 +1,13 @@
+{
+  "name": "Swizzle Menu",
+  "short_name": "Swizzle",
+  "start_url": "/menu/",
+  "scope": "/menu/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#16281E",
+  "theme_color": "#16281E",
+  "icons": [
+    { "src": "/assets/Logos/favicon-swizzle.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
