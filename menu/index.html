@@ -89,11 +89,13 @@ main{position:relative;z-index:1;padding:8px var(--pad) 120px;max-width:1180px;m
 
 /* ---------- table sets ---------- */
 .setgrid{display:grid;gap:14px;margin-top:16px;grid-template-columns:1fr 1fr}
+@media (max-width:700px){.setgrid{grid-template-columns:1fr}}
 @media (min-width:1300px){.setgrid{grid-template-columns:repeat(4,1fr)}}
 .set{position:relative;overflow:hidden;border:1px solid var(--gold-dim);background:var(--jungle-2);padding:18px 20px}
 .set::after{content:"";position:absolute;right:-30px;bottom:-34px;width:170px;height:170px;
   background:url('../assets/Logos/champa_white.png') center/contain no-repeat;opacity:.07;transform:rotate(-18deg);pointer-events:none}
-.set header{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.set header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px}
+.set header .price{font-size:22px}
 .set h3{font-family:var(--tiki);font-weight:400;font-size:clamp(20px,1.7vw,26px);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-hi);white-space:nowrap}
 .set ul{list-style:none;margin-top:12px;columns:1}
 .set li{padding:5px 0;font-size:16px;color:var(--cream-dim)}
