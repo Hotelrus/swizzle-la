@@ -69,7 +69,7 @@ main{position:relative;z-index:1;padding:8px var(--pad) 120px;max-width:1180px;m
 @media (orientation:landscape) and (min-width:900px){
   .rows{display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
 }
-.row{position:relative;min-height:56px;padding:16px 8px 16px 0;border-bottom:1px solid var(--line);cursor:pointer;
+.row{position:relative;min-height:56px;padding:14px 8px 14px 0;cursor:pointer;
   opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease,background .2s}
 .row.seen{opacity:1;transform:none}
 .row:active{background:rgba(201,164,92,.08)}
@@ -94,7 +94,7 @@ main{position:relative;z-index:1;padding:8px var(--pad) 120px;max-width:1180px;m
 .set header{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
 .set h3{font-family:var(--tiki);font-weight:400;font-size:clamp(20px,1.7vw,26px);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-hi);white-space:nowrap}
 .set ul{list-style:none;margin-top:12px;columns:1}
-.set li{padding:5px 0;border-bottom:1px dotted var(--line);font-size:16px;color:var(--cream-dim)}
+.set li{padding:5px 0;font-size:16px;color:var(--cream-dim)}
 .set li::before{content:"\25C6";color:var(--gold);font-size:9px;margin-right:9px;vertical-align:2px}
 .setnote{margin-top:12px;padding-right:70px;font-family:var(--garalde);font-style:italic;font-size:18px;color:var(--cream-faint)}
 
