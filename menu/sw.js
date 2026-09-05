@@ -1,7 +1,7 @@
 // Swizzle guest menu: cache-first service worker so the iPad keeps showing the
 // menu when the bar's Wi-Fi drops, and refreshes quietly when it is back.
 // Bump the version to force every iPad to refetch after a menu change.
-const CACHE = 'swizzle-menu-v1';
+const CACHE = 'swizzle-menu-v2';
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(['./', './index.html'])).then(() => self.skipWaiting()));

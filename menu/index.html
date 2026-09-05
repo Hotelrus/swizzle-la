@@ -30,18 +30,15 @@
 html{-webkit-text-size-adjust:100%;background:var(--jungle)}
 body{min-height:100vh;background:var(--jungle);color:var(--cream);font-family:var(--body);font-weight:300;font-size:17px;line-height:1.5;
   -webkit-font-smoothing:antialiased;overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent}
-body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.028;
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.015;
   background:url('../assets/photos/tiki-doodles.png') repeat;background-size:420px}
 a{color:inherit}
+.tabs button:focus,.chips a:focus,.row:focus{outline:none}
+.mark{position:fixed;right:-2vw;bottom:-2vw;z-index:0;width:min(46vw,560px);opacity:.07;pointer-events:none;user-select:none}
 
 /* ---------- sticky head ---------- */
-header.top{position:sticky;top:0;z-index:20;background:#0F1A13;border-bottom:1px solid var(--line);
-  padding-top:env(safe-area-inset-top)}
-.brandrow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px var(--pad) 6px}
-.brandrow img{height:48px;width:auto}
-.brandrow .soon{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);white-space:nowrap;opacity:.9}
-@media (max-width:480px){.brandrow img{height:40px}.brandrow .soon{font-size:10px;letter-spacing:.14em}}
-.tabs{display:flex;gap:0;padding:6px var(--pad) 0;overflow-x:auto;scrollbar-width:none}
+header.top{position:sticky;top:0;z-index:20;background:#0F1A13;border-bottom:1px solid var(--line)}
+.tabs{display:flex;gap:0;padding:calc(4px + env(safe-area-inset-top)) var(--pad) 0;overflow-x:auto;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
 .tabs button{position:relative;flex:1;min-height:48px;padding:0 6px;background:transparent;border:0;color:var(--cream-faint);
   font-family:var(--serif);font-size:15px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;cursor:pointer;
@@ -62,7 +59,7 @@ header.top{position:sticky;top:0;z-index:20;background:#0F1A13;border-bottom:1px
 
 /* ---------- groups ---------- */
 main{position:relative;z-index:1;padding:8px var(--pad) 120px;max-width:1180px;margin:0 auto}
-.group{display:none;padding-top:30px;scroll-margin-top:170px}
+.group{display:none;padding-top:26px;scroll-margin-top:120px}
 .group.on{display:block}
 .group h2{font-family:var(--tiki);font-weight:400;font-size:clamp(28px,3.6vw,40px);letter-spacing:.06em;text-transform:uppercase;
   color:var(--gold);line-height:1.1}
@@ -143,10 +140,6 @@ footer.foot{position:relative;z-index:1;text-align:center;padding:30px var(--pad
 <body>
 
 <header class="top">
-  <div class="brandrow">
-    <img src="../assets/Logos/swizzle-logo-header.png" alt="Swizzle · Tropical Cocktails &amp; Food">
-    <span class="soon soon-only">Opening 1 December 2026</span>
-  </div>
   <div class="tabs" id="tabs" role="tablist">
     <button data-chapter="cocktails" role="tab" class="on">Cocktails</button>
     <button data-chapter="food" role="tab">From the Fire</button>
@@ -156,6 +149,8 @@ footer.foot{position:relative;z-index:1;text-align:center;padding:30px var(--pad
 <nav class="chips" data-chapter="food"><a href="#g-6">Bar Snacks</a><a href="#g-7">Skewers &amp; Grill</a><a href="#g-8">Lao Classics</a><a href="#g-9">Tiki Heroes</a><a href="#g-10">Sharing Platters</a><a href="#g-11">Sweets</a></nav>
 <nav class="chips" data-chapter="drinks"><a href="#g-12">Wine by the Glass</a><a href="#g-13">Wine by the Bottle</a><a href="#g-14">Beerlao &amp; Friends</a><a href="#g-15">Soft &amp; Hot</a></nav>
 </header>
+
+<img class="mark" src="../assets/Logos/SWIZZLE%20LOGO/Swizzle_Logo_Cream.png" alt="" aria-hidden="true">
 
 <main id="menu">
 <section class="group sets" id="g-sets" data-chapter="cocktails"><h2>Suggestions for the Table</h2><p class="gnote">Whole tables, already built. Order one by its size.</p><div class="setgrid"><article class="set"><header><h3>For Two</h3><span class="price">500,000</span></header><ul><li>Kaipen &amp; Jeow Bong</li><li>Sai Oua Skewers</li><li>Larb Gai</li><li>Sabaidee Swizzle</li><li>Mekong Mai Tai</li><li>Khao Niew Mak Muang</li></ul><p class="setnote">The first visit, in the right order.</p></article><article class="set"><header><h3>For Three</h3><span class="price">700,000</span></header><ul><li>Kaipen &amp; Jeow Bong</li><li>Nam Khao Bites</li><li>Larb Gai</li><li>Ping Gai</li><li>Sabaidee Swizzle</li><li>Tamarind Temple</li><li>Mekong Mai Tai</li><li>Khao Niew Mak Muang</li></ul><p class="setnote">Four plates, three drinks, no decisions.</p></article><article class="set"><header><h3>For Four</h3><span class="price">950,000</span></header><ul><li>Swizzle Pupu Platter</li><li>Volcano Ribs</li><li>Grilled Prawns</li><li>Lao Tiki Punch Bowl serves four</li><li>Khao Niew Mak Muang</li><li>Fried Banana, Bolaven Coffee</li></ul><p class="setnote">Built around the punch bowl.</p></article><article class="set"><header><h3>For Five</h3><span class="price">1,250,000</span></header><ul><li>Lao Grill Board</li><li>Kaipen &amp; Dips Board</li><li>Crispy Coconut Shrimp</li><li>Vientiane Volcano Bowl serves four</li><li>Sabaidee Swizzle</li><li>Mekong Naga</li><li>Khao Niew Mak Muang</li></ul><p class="setnote">The volcano, and enough fire to match it.</p></article></div></section>
