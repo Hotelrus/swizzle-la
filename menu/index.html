@@ -38,28 +38,34 @@ a{color:inherit}
 
 /* ---------- sticky head ---------- */
 header.top{position:sticky;top:0;z-index:20;background:#0F1A13;border-bottom:1px solid var(--line)}
-.tabs{display:flex;gap:0;padding:calc(4px + env(safe-area-inset-top)) var(--pad) 0;overflow-x:auto;scrollbar-width:none}
+.tabs{display:flex;gap:10px;padding:calc(10px + env(safe-area-inset-top)) var(--pad) 8px;overflow-x:auto;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
-.tabs button{position:relative;flex:1;min-height:48px;padding:0 6px;background:transparent;border:0;color:var(--cream-faint);
-  font-family:var(--serif);font-size:15px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;cursor:pointer;
-  transition:color .25s}
-.tabs button::after{content:"";position:absolute;left:8%;right:8%;bottom:0;height:2px;background:var(--gold);
-  transform:scaleX(0);transform-origin:center;transition:transform .3s cubic-bezier(.2,.7,.2,1)}
-.tabs button.on{color:var(--gold-hi)}
-.tabs button.on::after{transform:scaleX(1)}
-@media (max-width:520px){.tabs button{font-size:12px;letter-spacing:.08em;min-height:44px}}
-.chips{display:none;gap:6px;overflow-x:auto;padding:10px var(--pad) 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+.tabs button{position:relative;flex:1;min-height:72px;padding:0 10px;background:none;color:var(--cream-dim);
+  font-family:var(--serif);font-size:16px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;cursor:pointer;
+  border:12px solid transparent;border-left-width:40px;border-right-width:40px;
+  border-image:url('../assets/Menu%20Buttons/plaque.png') 56 190 56 190 fill / 12px 40px 12px 40px stretch;
+  opacity:.72;transition:opacity .25s,color .25s,filter .25s}
+.tabs button.on{opacity:1;color:var(--gold-hi);filter:brightness(1.18) drop-shadow(0 4px 8px rgba(0,0,0,.5))}
+@media (max-width:700px){
+  .tabs{gap:0;padding-top:calc(4px + env(safe-area-inset-top));padding-bottom:0}
+  .tabs button{border:0;border-image:none;min-height:46px;padding:0 6px;font-size:12px;letter-spacing:.08em;opacity:1;color:var(--cream-faint);filter:none}
+  .tabs button::after{content:"";position:absolute;left:8%;right:8%;bottom:0;height:2px;background:var(--gold);transform:scaleX(0);transition:transform .3s}
+  .tabs button.on::after{transform:scaleX(1)}
+}
+.chips{display:none;gap:8px;overflow-x:auto;padding:8px var(--pad) 12px;scrollbar-width:none;-webkit-overflow-scrolling:touch;
   border-top:1px solid rgba(201,164,92,.1)}
 .chips::-webkit-scrollbar{display:none}
 .chips.on{display:flex}
-.chips a{flex:none;min-height:34px;display:inline-flex;align-items:center;padding:0 13px;border-radius:999px;
+.chips a{flex:none;min-height:36px;display:inline-flex;align-items:center;padding:0 4px;
   font-size:13px;letter-spacing:.04em;text-decoration:none;color:var(--cream-faint);white-space:nowrap;
-  background:transparent;transition:background .25s,color .25s}
-.chips a.here{background:rgba(201,164,92,.14);color:var(--gold-hi)}
+  border:6px solid transparent;border-left-width:18px;border-right-width:18px;
+  border-image:url('../assets/Menu%20Buttons/pill.png') 26 79 26 79 fill / 6px 18px 6px 18px stretch;
+  opacity:.7;transition:opacity .25s,color .25s,filter .25s}
+.chips a.here{opacity:1;color:var(--gold-hi);filter:brightness(1.2) drop-shadow(0 3px 6px rgba(0,0,0,.5))}
 
 /* ---------- groups ---------- */
 main{position:relative;z-index:1;padding:8px var(--pad) 120px;max-width:1180px;margin:0 auto}
-.group{display:none;padding-top:26px;scroll-margin-top:120px}
+.group{display:none;padding-top:26px;scroll-margin-top:150px}
 .group.on{display:block}
 .group h2{font-family:var(--tiki);font-weight:400;font-size:clamp(28px,3.6vw,40px);letter-spacing:.06em;text-transform:uppercase;
   color:var(--gold);line-height:1.1}
