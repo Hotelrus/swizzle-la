@@ -85,18 +85,14 @@ main{position:relative;z-index:1;padding:8px var(--pad) 120px;max-width:1180px;m
 .setgrid{display:grid;gap:14px;margin-top:16px;grid-template-columns:1fr 1fr}
 @media (min-width:1300px){.setgrid{grid-template-columns:repeat(4,1fr)}}
 .set{position:relative;overflow:hidden;border:1px solid var(--gold-dim);background:var(--jungle-2);padding:18px 20px}
-.set::after{content:"";position:absolute;right:-4px;bottom:-6px;width:74px;height:74px;background:center/contain no-repeat;
-  filter:drop-shadow(0 8px 12px rgba(0,0,0,.55));pointer-events:none}
-.set:nth-child(1)::after{background-image:url('../assets/spirits/spirit-1.png')}
-.set:nth-child(2)::after{background-image:url('../assets/Logos/champa_white.png');width:54px;height:54px;right:12px;bottom:10px;opacity:.85;transform:rotate(-18deg);filter:none}
-.set:nth-child(3)::after{background-image:url('../assets/spirits/spirit-2.png')}
-.set:nth-child(4)::after{background-image:url('../assets/spirits/spirit-4.png')}
+.set::after{content:"";position:absolute;right:-30px;bottom:-34px;width:170px;height:170px;
+  background:url('../assets/Logos/champa_white.png') center/contain no-repeat;opacity:.07;transform:rotate(-18deg);pointer-events:none}
 .set header{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
 .set h3{font-family:var(--tiki);font-weight:400;font-size:clamp(20px,1.7vw,26px);letter-spacing:.08em;text-transform:uppercase;color:var(--gold-hi);white-space:nowrap}
 .set ul{list-style:none;margin-top:12px;columns:1}
 .set li{padding:5px 0;font-size:16px;color:var(--cream-dim)}
 .set li::before{content:"\25C6";color:var(--gold);font-size:9px;margin-right:9px;vertical-align:2px}
-.setnote{margin-top:12px;padding-right:70px;font-family:var(--garalde);font-style:italic;font-size:18px;color:var(--cream-faint)}
+.setnote{margin-top:12px;font-family:var(--garalde);font-style:italic;font-size:18px;color:var(--cream-faint)}
 
 /* ---------- detail sheet ---------- */
 dialog.sheet{border:0;padding:0;margin:0;inset:0;width:100%;height:100%;max-width:none;max-height:none;background:transparent;color:var(--cream);
