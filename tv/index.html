@@ -38,12 +38,13 @@ main{position:absolute;left:50%;top:50%;width:calc(1920*var(--u));height:calc(10
 /* paint order: photo (0), jungle wash and doodle texture (1), content (2).
    ::before paints beneath child elements by default, so the wash needs an
    explicit z-index or the photo ends up on top of it. */
-.slide .bg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center}
-.slide.on .bg{animation:kb 20s ease-in-out both}
-@keyframes kb{from{transform:scale(1) translate(0,0)}to{transform:scale(1.08) translate(-1.5%,1%)}}
+/* Photographs behind the slides were tried and dropped: with the doodle
+   texture and the type they read as busy. The .bg node is still emitted by
+   build.py so a photo can be brought back by deleting the display:none. */
+.slide .bg{display:none;position:absolute;inset:0;z-index:0;background-size:cover;background-position:center}
 .slide::before{content:"";position:absolute;inset:0;z-index:1;
-  background:linear-gradient(180deg,rgba(22,40,30,.88),rgba(22,40,30,.82) 60%,rgba(22,40,30,.95))}
-.slide::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.05;
+  background:linear-gradient(180deg,var(--jungle-2),var(--jungle) 55%,#122019)}
+.slide::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.07;
   background:url('../assets/photos/tiki-doodles.png') repeat;background-size:calc(460*var(--u))}
 .slide>header,.slide>.items,.slide>.inter{position:relative;z-index:2}
 
