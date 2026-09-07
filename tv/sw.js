@@ -1,7 +1,7 @@
 // Service worker for the TV menu board.
 // Cache-first for the board and everything it references, refreshed in the
 // background, so a Wi-Fi drop mid-evening does not black out the screen.
-var CACHE = 'swizzle-tv-v3';
+var CACHE = 'swizzle-tv-v4';
 
 self.addEventListener('install', function () { self.skipWaiting(); });
 
