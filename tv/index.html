@@ -105,16 +105,16 @@ main{position:absolute;left:50%;top:50%;width:calc(1920*var(--u));height:calc(10
 @keyframes ring{0%,100%{transform:rotate(0)}15%{transform:rotate(-2.5deg)}35%{transform:rotate(2deg)}55%{transform:rotate(-1.2deg)}75%{transform:rotate(.6deg)}}
 
 /* ---------- footer ---------- */
-footer{position:absolute;left:0;right:0;bottom:0;z-index:2;display:flex;align-items:center;justify-content:space-between;
+footer{position:absolute;left:0;right:0;bottom:0;z-index:2;display:flex;align-items:center;justify-content:center;
   padding:0 calc(120*var(--u)) calc(36*var(--u));font-size:calc(24*var(--u));letter-spacing:.24em;
   text-transform:uppercase;color:var(--cream-faint)}
-footer .marks{display:flex;gap:calc(12*var(--u))}
-footer .marks i{width:calc(11*var(--u));height:calc(11*var(--u));transform:rotate(45deg);background:var(--gold-dim);transition:background .4s}
-footer .marks i.on{background:var(--gold)}
+footer .marks{display:flex;gap:calc(10*var(--u))}
+footer .marks i{width:calc(6*var(--u));height:calc(6*var(--u));border-radius:50%;background:rgba(201,164,92,.22);transition:background .4s}
+footer .marks i.on{background:rgba(201,164,92,.6)}
 footer .soon{color:var(--terra)}
 
 /* pre-opening lines: remove the class on opening night */
-/* .soon-only{display:none} */
+.soon-only{display:none}   /* opening-date lines hidden at Ruslan's request, 7 Sep 2026 */
 </style>
 <meta name="robots" content="noindex,nofollow">
 </head>
@@ -158,9 +158,7 @@ footer .soon{color:var(--terra)}
 </section>
 
 <footer>
-  <span>All prices in Lao kip</span>
   <span class="marks" id="marks"></span>
-  <span class="soon soon-only">Opening 1 December 2026</span>
 </footer>
 </main>
 
