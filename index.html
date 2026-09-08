@@ -228,7 +228,7 @@ nav.links a:hover::after{left:0;right:0}
   header.nav.scrolled{backdrop-filter:none;background:rgba(15,26,19,.97)}
   nav.links{position:fixed;inset:0;background:rgba(15,26,19,.98);flex-direction:column;justify-content:center;gap:30px;transform:translateX(100%);transition:transform .45s;z-index:59}
   nav.links::before{content:"";position:absolute;inset:0;pointer-events:none;
-    background:url('assets/photos/tiki-doodles.png') repeat;background-size:380px;opacity:.06}
+    background:url('assets/photos/tiki-doodles.webp') repeat;background-size:380px;opacity:.06}
   nav.links.open{transform:none}
   nav.links a{font-size:15px}
   .burger{display:block;z-index:61;position:relative}
@@ -254,7 +254,7 @@ nav.links a:hover::after{left:0;right:0}
   background:
     linear-gradient(90deg, rgba(13,24,17,.93) 0%, rgba(13,24,17,.72) 38%, rgba(13,24,17,.28) 68%, rgba(13,24,17,.42) 100%),
     linear-gradient(0deg, rgba(15,26,19,.9) 0%, transparent 30%),
-    url('assets/photos/header-photo-6.png') center 70% / cover no-repeat,
+    url('assets/photos/header-photo-6.webp') center 70% / cover no-repeat,
     var(--jungle);
 }
 .hero-plume{position:absolute;right:6%;bottom:7%;width:clamp(70px,8vw,120px);z-index:3;
@@ -309,7 +309,7 @@ nav.links a:hover::after{left:0;right:0}
 /* woven tapa-cloth pattern across the whole section */
 .sig::after{
   content:"";position:absolute;inset:0;pointer-events:none;
-  background:url('assets/photos/tiki-doodles.png') repeat;background-size:520px;
+  background:url('assets/photos/tiki-doodles.webp') repeat;background-size:520px;
   opacity:.033;
 }
 .sig-head{margin-bottom:clamp(40px,5vw,60px)}
@@ -425,7 +425,7 @@ nav.links a:hover::after{left:0;right:0}
 .cta{clip-path:inset(0)}
 .cta::before{
   content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:url('assets/photos/tiki-doodles.png') repeat;background-size:460px;
+  background:url('assets/photos/tiki-doodles.webp') repeat;background-size:460px;
   opacity:.07;
 }
 .cta>*{position:relative}
@@ -553,7 +553,7 @@ footer{background:#0F1D15;padding:70px 0 0;position:relative;overflow:hidden}
 @media(max-width:860px){
   .hero{background:
     linear-gradient(180deg, rgba(13,24,17,.9) 0%, rgba(13,24,17,.72) 60%, rgba(15,26,19,.94) 100%),
-    url('assets/photos/header-photo-6.png') center 70% / cover no-repeat, var(--jungle)}
+    url('assets/photos/header-photo-6.webp') center 70% / cover no-repeat, var(--jungle)}
 }
 .blend-totem{
   position:absolute;pointer-events:none;z-index:0;
@@ -634,7 +634,7 @@ footer{background:#0F1D15;padding:70px 0 0;position:relative;overflow:hidden}
 .keepers{clip-path:inset(0)}
 .keepers::after{
   content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
-  background:url('assets/photos/tiki-doodles.png') repeat;background-size:460px;
+  background:url('assets/photos/tiki-doodles.webp') repeat;background-size:460px;
   opacity:.05;
 }
 .keepers-sub{text-align:center;margin-top:14px;font-family:var(--garalde);font-style:italic;font-size:18px;color:var(--cream-dim)}
@@ -821,6 +821,7 @@ footer .wrap{position:relative;z-index:2}
 .hours-note{margin-top:14px;font-size:11px;line-height:1.7;letter-spacing:.1em;
   text-transform:uppercase;color:var(--terra)}
 
+@media(max-width:720px){.hero{background:linear-gradient(180deg, rgba(13,24,17,.9) 0%, rgba(13,24,17,.72) 60%, rgba(15,26,19,.94) 100%),url('assets/photos/header-photo-6-960.webp') center 70% / cover no-repeat, var(--jungle)}}
 </style>
 
 <link rel="canonical" href="https://swizzle.la/">
@@ -848,7 +849,7 @@ footer .wrap{position:relative;z-index:2}
 <header class="nav" id="nav">
   <div class="nav-in">
     <a class="brand" href="#top" aria-label="Swizzle home">
-      <img class="brand-wide" src="assets/Logos/swizzle-logo-header.png" alt="Swizzle · Tropical Cocktails &amp; Food">
+      <img class="brand-wide" src="assets/Logos/swizzle-logo-header.webp" alt="Swizzle · Tropical Cocktails &amp; Food">
     </a>
     <nav class="links" id="links" aria-label="Main">
       <a href="#top">Home</a>
@@ -894,49 +895,49 @@ footer .wrap{position:relative;z-index:2}
     </div>
     <div class="sig-grid">
       <article class="scard rv">
-        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-punch.jpg" alt="Lao Tiki Punch in a carved tiki mug with passion fruit and mint"></div></div>
+        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-punch.webp" alt="Lao Tiki Punch in a carved tiki mug with passion fruit and mint" loading="lazy" decoding="async"></div></div>
         <h3>Lao Tiki Punch</h3>
         <p class="ing">Dark Lao rum, house falernum, passion fruit, orange, caramel.</p>
         <p class="price">140,000 LAK</p>
       </article>
       <article class="scard rv d1">
-        <div class="photo-frame"><div class="photo"><img src="assets/photos/card-2b.jpg" alt="That Luang Sunset coupe cocktail"></div></div>
+        <div class="photo-frame"><div class="photo"><img src="assets/photos/card-2b.webp" alt="That Luang Sunset coupe cocktail" loading="lazy" decoding="async"></div></div>
         <h3>That Luang Sunset</h3>
         <p class="ing">Coconut rum, lemongrass, passion fruit, lime, chili-salt.</p>
         <p class="price">110,000 LAK</p>
       </article>
       <article class="scard rv d2">
-        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-colada.jpg" alt="Khao Niew Colada in a hurricane glass with pineapple and toasted sticky rice"></div></div>
+        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-colada.webp" alt="Khao Niew Colada in a hurricane glass with pineapple and toasted sticky rice" loading="lazy" decoding="async"></div></div>
         <h3>Khao Niew Colada</h3>
         <p class="ing">Laodi white rum, sticky rice orgeat, coconut-pandan cream, pineapple.</p>
         <p class="price">110,000 LAK</p>
       </article>
       <article class="scard rv d3">
-        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-namwan.jpg" alt="Nam Wan Old Fashioned with sun-dried banana chips"></div></div>
+        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-namwan.webp" alt="Nam Wan Old Fashioned with sun-dried banana chips" loading="lazy" decoding="async"></div></div>
         <h3>Nam Wan Old&nbsp;Fashioned</h3>
         <p class="ing">Sun-dried banana rum, palm sugar, cacao bitters. Big clear cube.</p>
         <p class="price">195,000 LAK</p>
       </article>
       <article class="scard rv">
-        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-champa.jpg" alt="Dok Champa Fizz with butterfly pea fade and an orchid on top"></div></div>
+        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-champa.webp" alt="Dok Champa Fizz with butterfly pea fade and an orchid on top" loading="lazy" decoding="async"></div></div>
         <h3>Dok Champa Fizz</h3>
         <p class="ing">Gin, jasmine syrup, egg white, butterfly pea fade. Orchid on top.</p>
         <p class="price">140,000 LAK</p>
       </article>
       <article class="scard rv d1">
-        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-naga.jpg" alt="Mekong Naga in a serpent-carved copper mug with cinnamon smoke"></div></div>
+        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-naga.webp" alt="Mekong Naga in a serpent-carved copper mug with cinnamon smoke" loading="lazy" decoding="async"></div></div>
         <h3>Mekong Naga</h3>
         <p class="ing">Dark rum, tamarind cordial, five-spice palm syrup, cinnamon smoke.</p>
         <p class="price">110,000 LAK</p>
       </article>
       <article class="scard rv d2">
-        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-khaen.jpg" alt="Khaen Fire under a smoke-filled glass cloche"></div></div>
+        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-khaen.webp" alt="Khaen Fire under a smoke-filled glass cloche" loading="lazy" decoding="async"></div></div>
         <h3>Khaen Fire</h3>
         <p class="ing">Tequila, mak khaen tincture, smoke under a cloche, lifted at your table.</p>
         <p class="price">140,000 LAK</p>
       </article>
       <article class="scard rv d3">
-        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-jars.jpg" alt="Plain of Jars cocktail served in a small clay jar"></div></div>
+        <div class="photo-frame"><div class="photo"><img src="assets/photos/sig-jars.webp" alt="Plain of Jars cocktail served in a small clay jar" loading="lazy" decoding="async"></div></div>
         <h3>Plain of Jars</h3>
         <p class="ing">House rum blend and jar-aged spices, served in its own little clay jar.</p>
         <p class="price">195,000 LAK</p>
@@ -1121,42 +1122,42 @@ footer .wrap{position:relative;z-index:2}
       <div class="menu-cols">
         <div class="mgroup">
           <h3>Bar Snacks</h3>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Kaipen &amp; Jeow Bong</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">Mekong river weed crisps, Luang Prabang chili jam.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Mak Khaen Cashews</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">Warm, tossed in Lao pepper salt.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Nam Khao Bites</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">Crispy rice salad, lettuce cups.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Beachcomber Spam Musubi</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">The tiki bar classic, our little joke with Hawaii.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Kaipen &amp; Jeow Bong</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">Mekong river weed crisps, Luang Prabang chili jam.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Mak Khaen Cashews</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">Warm, tossed in Lao pepper salt.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Nam Khao Bites</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">Crispy rice salad, lettuce cups.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Beachcomber Spam Musubi</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">The tiki bar classic, our little joke with Hawaii.</p></div></div>
         </div>
         <div class="mgroup">
           <h3>Skewers &amp; Grill</h3>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Sai Oua Skewers</span><span class="dots"></span><span class="price">65,000</span></div><p class="mn">Lao herb sausage over charcoal.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Ping Gai</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Lao grilled chicken, jeow som.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Lemongrass Beef Skewers</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Marinated in lemongrass and soy, charred over coals.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Grilled Prawns</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Finished with mak khaen salt.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Sai Oua Skewers</span><span class="dots"></span><span class="price">65,000</span></div><p class="mn">Lao herb sausage over charcoal.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Ping Gai</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Lao grilled chicken, jeow som.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Lemongrass Beef Skewers</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Marinated in lemongrass and soy, charred over coals.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Grilled Prawns</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Finished with mak khaen salt.</p></div></div>
         </div>
         <div class="mgroup">
           <h3>Lao Classics</h3>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Larb Gai</span><span class="dots"></span><span class="price">65,000</span></div><p class="mn">Minced chicken, toasted rice, mint, lime, padaek heat.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Tam Mak Hoong</span><span class="dots"></span><span class="price">65,000</span></div><p class="mn">Green papaya, pounded to order.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Or Lam</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Luang Prabang stew, sticky rice.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Ping Pa</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Whole grilled river fish, herbs.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Larb Gai</span><span class="dots"></span><span class="price">65,000</span></div><p class="mn">Minced chicken, toasted rice, mint, lime, padaek heat.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Tam Mak Hoong</span><span class="dots"></span><span class="price">65,000</span></div><p class="mn">Green papaya, pounded to order.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Or Lam</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Luang Prabang stew, sticky rice.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Ping Pa</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Whole grilled river fish, herbs.</p></div></div>
         </div>
         <div class="mgroup">
           <h3>Tiki Heroes</h3>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Volcano Ribs</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Sticky, smoky, made for the Bolaven Bird.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Huli Huli Wings</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Pineapple-soy glaze, charred over the fire.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Mekong Poke Bowl</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Raw river fish, sticky rice, soy-sesame dressing, herbs.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Crispy Coconut Shrimp</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Coconut crumb, sweet chili jam.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Volcano Ribs</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Sticky, smoky, made for the Bolaven Bird.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Huli Huli Wings</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Pineapple-soy glaze, charred over the fire.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Mekong Poke Bowl</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Raw river fish, sticky rice, soy-sesame dressing, herbs.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Crispy Coconut Shrimp</span><span class="dots"></span><span class="price">95,000</span></div><p class="mn">Coconut crumb, sweet chili jam.</p></div></div>
         </div>
         <div class="mgroup">
           <h3>Sharing Platters</h3>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Swizzle Pupu Platter</span><span class="dots"></span><span class="price">185,000</span></div><p class="mn">A little of everything, built for a bowl round.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Lao Grill Board</span><span class="dots"></span><span class="price">185,000</span></div><p class="mn">Sai oua, ping gai, beef skewers, three jeows.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Kaipen &amp; Dips Board</span><span class="dots"></span><span class="price">185,000</span></div><p class="mn">River weed crisps, jeow bong and two more house jeows.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Swizzle Pupu Platter</span><span class="dots"></span><span class="price">185,000</span></div><p class="mn">A little of everything, built for a bowl round.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Lao Grill Board</span><span class="dots"></span><span class="price">185,000</span></div><p class="mn">Sai oua, ping gai, beef skewers, three jeows.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Kaipen &amp; Dips Board</span><span class="dots"></span><span class="price">185,000</span></div><p class="mn">River weed crisps, jeow bong and two more house jeows.</p></div></div>
         </div>
         <div class="mgroup">
           <h3>Sweets</h3>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Khao Niew Mak Muang</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">Mango sticky rice, the honest ending.</p></div></div>
-          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.png" alt=""></div><div class="fbody"><div class="line"><span class="name">Fried Banana, Bolaven Coffee</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">Caramelised banana fritters, Bolaven coffee syrup.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Khao Niew Mak Muang</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">Mango sticky rice, the honest ending.</p></div></div>
+          <div class="mrow food-row"><div class="fthumb" aria-hidden="true"><img src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div><div class="fbody"><div class="line"><span class="name">Fried Banana, Bolaven Coffee</span><span class="dots"></span><span class="price">45,000</span></div><p class="mn">Caramelised banana fritters, Bolaven coffee syrup.</p></div></div>
         </div>
       </div>
       <p class="menu-note">Our kitchen handles peanuts, fish and gluten daily. Tell us about any allergy and we will cook around it.</p>
@@ -1203,13 +1204,13 @@ footer .wrap{position:relative;z-index:2}
 
 <!-- ================= STORY ================= -->
 <section class="story" id="story">
-  <div class="story-photo rv"><img src="assets/photos/header-photo-3.png" alt="Swizzle tiki bar scene"></div>
+  <div class="story-photo rv"><img src="assets/photos/header-photo-3.webp" alt="Swizzle tiki bar scene" loading="lazy" decoding="async"></div>
   <div class="story-panel">
     <p class="eyebrow rv">Our Story <span class="dia"></span></p>
     <h2 class="rv d1">A meeting of islands &amp; rivers</h2>
     <p class="rv d2">Swizzle is where the spirit of the Pacific meets the soul of Laos. By day this house is Noy's Fruit Heaven, pouring Vientiane's freshest shakes. At five, the totems wake: 65 cocktails built on aged rum, lao-lao and morning-market fruit, served under carvings that crossed the sea from Bali.</p>
     <p class="gong-line rv d2">And when the bronze gong sounds, the whole room knows: a bowl is coming.</p>
-    <img class="story-temple" src="assets/photos/story-scenery.png" alt="" aria-hidden="true">
+    <img class="story-temple" src="assets/photos/story-scenery.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
   </div>
 </section>
 
@@ -1220,14 +1221,14 @@ footer .wrap{position:relative;z-index:2}
 
 <!-- ================= GONG RITUAL ================= -->
 <section class="gong-band leafy" id="gong-ritual">
-  <img class="gong-flora gf-left" src="assets/photos/flowers-left.png" alt="" aria-hidden="true">
-  <img class="gong-flora gf-right" src="assets/photos/flowers-left.png" alt="" aria-hidden="true">
+  <img class="gong-flora gf-left" src="assets/photos/flowers-left.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
+  <img class="gong-flora gf-right" src="assets/photos/flowers-left.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
   <div class="wrap">
     <div class="orn-title rv"><span class="dia"></span><h2 class="sect">The Gong</h2><span class="dia"></span></div>
     <p class="sub rv d1">Every sharing bowl leaves the bar with fire, smoke, and one strike of the bronze. The whole room knows.</p>
     <div class="gong-wrap rv d2">
       <button class="gong" id="gong" aria-label="Strike the gong">
-        <img src="assets/Logos/gong-clean.png" alt="">
+        <img src="assets/Logos/gong-clean.webp" alt="" loading="lazy" decoding="async">
       </button>
     </div>
     <p class="gong-hint rv d3">Tap the gong. Sound on.</p>
@@ -1239,17 +1240,17 @@ footer .wrap{position:relative;z-index:2}
 <!-- ================= HOUSE SPIRITS ================= -->
 <div class="trim" aria-hidden="true"></div>
 <section class="spirits leafy" aria-label="The house spirits">
-  <div class="flora f-top" aria-hidden="true"><img src="assets/spirits/leaves-top.png" alt=""></div>
-  <div class="flora f-bottom" aria-hidden="true"><img src="assets/spirits/leaves-bottom.png" alt=""></div>
+  <div class="flora f-top" aria-hidden="true"><img src="assets/spirits/leaves-top.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="flora f-bottom" aria-hidden="true"><img src="assets/spirits/leaves-bottom.webp" alt="" loading="lazy" decoding="async"></div>
   <div class="wrap">
     <div class="orn-title rv"><span class="dia"></span><h2 class="sect">Ask the House Spirits</h2><span class="dia"></span></div>
     <p class="oracle-hint rv d1">Cannot choose from sixty-five drinks? Tap a spirit and let the totems decide your night.</p>
     <div class="spirits-row">
-      <button class="spirit rv" data-spirit="keeper"><img src="assets/spirits/spirit-1.png" alt="The Keeper totem"><span>The Keeper</span></button>
-      <button class="spirit rv d1" data-spirit="guardian"><img src="assets/spirits/spirit-2.png" alt="The Guardian totem"><span>The Guardian</span></button>
-      <button class="spirit rv d2" data-spirit="host"><img src="assets/spirits/spirit-3.png" alt="The Host totem"><span>The Host</span></button>
-      <button class="spirit rv d3" data-spirit="elder"><img src="assets/spirits/spirit-4.png" alt="The Elder totem"><span>The Elder</span></button>
-      <button class="spirit rv d3" data-spirit="voice"><img src="assets/spirits/spirit-5.png" alt="The Voice totem"><span>The Voice</span></button>
+      <button class="spirit rv" data-spirit="keeper"><img src="assets/spirits/spirit-1.webp" alt="The Keeper totem" loading="lazy" decoding="async"><span>The Keeper</span></button>
+      <button class="spirit rv d1" data-spirit="guardian"><img src="assets/spirits/spirit-2.webp" alt="The Guardian totem" loading="lazy" decoding="async"><span>The Guardian</span></button>
+      <button class="spirit rv d2" data-spirit="host"><img src="assets/spirits/spirit-3.webp" alt="The Host totem" loading="lazy" decoding="async"><span>The Host</span></button>
+      <button class="spirit rv d3" data-spirit="elder"><img src="assets/spirits/spirit-4.webp" alt="The Elder totem" loading="lazy" decoding="async"><span>The Elder</span></button>
+      <button class="spirit rv d3" data-spirit="voice"><img src="assets/spirits/spirit-5.webp" alt="The Voice totem" loading="lazy" decoding="async"><span>The Voice</span></button>
     </div>
     <div class="oracle" id="oracle" aria-live="polite">
       <p class="o-spirit" id="o-spirit"></p>
@@ -1263,7 +1264,7 @@ footer .wrap{position:relative;z-index:2}
 <!-- ================= CTA BAND ================= -->
 <section class="cta" id="visit">
   <div class="wrap cta-in">
-    <div class="cta-emblem rv" aria-hidden="true"><img class="champa" src="assets/Logos/champa_white.png" alt=""></div>
+    <div class="cta-emblem rv" aria-hidden="true"><img class="champa" src="assets/Logos/champa_white.webp" alt="" loading="lazy" decoding="async"></div>
     <h2 class="rv d1">Join us for an unforgettable experience</h2>
     <div class="cta-copy rv d2">
       <p>Hidden behind the fruit stand near Pha That Luang. Good cocktails, warm people, and even warmer nights. We open on <b>1 December 2026</b>: send us a message and we will tell you the night the torches are lit.</p>
@@ -1277,11 +1278,11 @@ footer .wrap{position:relative;z-index:2}
 
 <!-- ================= FOOTER ================= -->
 <footer>
-  <img class="foot-scenery" src="assets/spirits/scenery-footer.png" alt="" aria-hidden="true">
+  <img class="foot-scenery" src="assets/spirits/scenery-footer.webp" alt="" aria-hidden="true" loading="lazy" decoding="async">
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="assets/Logos/SWIZZLE%20LOGO/swizzle-logo-main.png" alt="Swizzle · Tropical Cocktails &amp; Food · Vientiane" style="width:190px;height:auto;margin-bottom:16px;filter:drop-shadow(0 8px 18px rgba(0,0,0,.5))">
+        <img src="assets/Logos/SWIZZLE%20LOGO/swizzle-logo-main.webp" alt="Swizzle · Tropical Cocktails &amp; Food · Vientiane" style="width:190px;height:auto;margin-bottom:16px;filter:drop-shadow(0 8px 18px rgba(0,0,0,.5))" loading="lazy" decoding="async">
         <p class="tiki-sub">Tiki Cocktails, Lao Soul</p>
         <p>A Lao tiki bar hiding inside a fruit stand near Pha That Luang. Fresh fruit by day, old rum by night, one gong at all hours.</p>
         <!-- PLACEHOLDER LINKS: every href marked data-todo still needs the real

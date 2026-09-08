@@ -2,7 +2,7 @@
 // The page itself is fetched fresh whenever the network is up, so a rebuild
 // shows on the next reload; everything (page included) is cached as a fallback
 // so a Wi-Fi drop mid-evening does not black out the screen.
-var CACHE = 'swizzle-tv-v6';
+var CACHE = 'swizzle-tv-v7';
 
 self.addEventListener('install', function () { self.skipWaiting(); });
 

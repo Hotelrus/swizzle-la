@@ -39,7 +39,7 @@ nav.links a.active::after{left:0;right:0}
   nav.links{position:fixed;inset:0;background:rgba(15,26,19,.98);flex-direction:column;justify-content:center;
     gap:30px;transform:translateX(100%);transition:transform .45s;z-index:59}
   nav.links::before{content:"";position:absolute;inset:0;pointer-events:none;
-    background:url('../assets/photos/tiki-doodles.png') repeat;background-size:380px;opacity:.06}
+    background:url('../assets/photos/tiki-doodles.webp') repeat;background-size:380px;opacity:.06}
   nav.links.open{transform:none}
   nav.links a{font-size:15px}
   .burger{display:block;z-index:61;position:relative}
