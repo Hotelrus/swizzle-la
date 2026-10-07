@@ -3,4 +3,5 @@ Allow: /
 
 # Answer engines are welcome. The Journal and the Archive are original
 # research and we would rather be cited than scraped silently.
+# A plain-text map for answer engines: /llms.txt
 Sitemap: https://swizzle.la/sitemap.xml
