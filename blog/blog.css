@@ -128,6 +128,9 @@ article.post blockquote{margin:34px 0;padding:6px 0 6px 26px;border-left:2px sol
   font-family:var(--garalde);font-style:italic;font-size:21px;line-height:1.55;color:var(--gold-hi)}
 article.post blockquote cite{display:block;margin-top:12px;font-style:normal;font-family:var(--body);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-faint)}
 article.post .body b{color:var(--cream);font-weight:500}
+article.post .body ul{margin:0 0 22px;padding-left:22px;color:var(--cream-dim);font-size:16.5px}
+article.post .body li{margin:0 0 8px}
+article.post .body li::marker{color:var(--gold)}
 /* in-article figure — photos, clippings, documents */
 article.post figure{margin:38px 0}
 article.post figure img{display:block;width:100%;border:1px solid var(--gold-dim)}
